@@ -1,0 +1,62 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Mar 12 22:31:44 2012
+;; Desktop file format version 206
+;; Emacs version 23.4.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("mapreduce" "init" "loadrequest" "find_fuzzy " "find" "record2json" "lists:map" "map" "foreach" "y" "Recei" "Received" "new" "rec" "data" "attach"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/configs/main.el" "~/.emacs" "~/.emacs.d/configs/windata.el" "~/.emacs.d/configs/main.el" "~/.emacs" "~/.emacs.d/configs/tree-mode.el" "~/.emacs.d/configs/dirtree.el" "~/.emacs.d" "~/CODING/Erlang/erlpragmatic/src/mucc.erl" "~/CODING/Erlang/jcode/emacs.setup" "~/CODING/Erlang/erlbilling/soapbilling.erl" "~/CODING/Erlang/erlbilling/tables.hrl" "~/CODING/Erlang/erlbilling/billingserver.erl" "~/CODING/Erlang/socket/lib_chan_auth.erl" "~/CODING/Erlang/socket/mod_math.erl" "~/CODING/Erlang/erlang-learning/making_tdd_with_eunit/test/mobile_test.erl" "~/CODING/Erlang/erlang-learning/making_tdd_with_eunit/src/mobile.erl" "~/CODING/Erlang/erlang-learning/README" "~/CODING/Erlang/" "~/CODING/Erlang/erlangine/include/authkey.hrl" "~/CODING/Erlang/erlangine/src/enge2_web.erl" "~/CODING/Erlang/erlangine/src/session.erl" "~/CODING/Erlang/erlangine/support/include.mk" "~/CODING/Erlang/erlangine/src/entry.erl" "~/CODING/Erlang/erlangine/src/writing.erl" "~/CODING/Erlang/erlangine/src/entry.erl" "~/CODING/Erlang/erlangine/src/enge2.erl" "~/CODING/Erlang/erlangine/src/docs.erl" "~/CODING/Erlang/erlangine/couchup/value.json" "~/CODING/Erlang/erlangine/conf/entries.json"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/artemart/.emacs.d/configs/main.el"
+  "main.el"
+  'emacs-lisp-mode
+  '(linum-mode)
+  341
+  '(691 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(linum-mode)
+  904
+  '(815 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/Erlang/erlangine/src/enge2_web.erl"
+  "enge2_web.erl"
+  'erlang-mode
+  '(linum-mode flymake-mode erlang-extended-mode)
+  1453
+  '(384 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/Erlang/erlangine/src/writing.erl"
+  "writing.erl"
+  'erlang-mode
+  '(linum-mode flymake-mode erlang-extended-mode)
+  1063
+  '(1011 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+

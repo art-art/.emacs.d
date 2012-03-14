@@ -16,9 +16,11 @@
     (message "Loaded config file: %s" file)
     ))
 
-(load-cfg-files '("tree-mode"
+(load-cfg-files '("sr-speedbar"
+		  "tree-mode"
 		  "windata"
 		  "dirtree"
+		  "init-speedbar"
 		  "flymake"
 		  "erlang"
 		  "theme"

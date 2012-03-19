@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Wed Mar 14 22:40:42 2012
+;; Created Mon Mar 19 22:42:23 2012
 ;; Desktop file format version 206
 ;; Emacs version 23.4.1
 
@@ -10,75 +10,53 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '("mapreduce" "init" "loadrequest" "find_fuzzy " "find" "record2json" "lists:map" "map" "foreach" "y" "Recei" "Received" "new" "rec" "data" "attach"))
+(setq search-ring nil)
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs.d/configs/init-speedbar.el" "~/.emacs.d/configs/main.el" "~/CODING/Erlang/erlangine/src/enge2_conf.erl" "~/CODING/Erlang/erlangine/src/" "~/.emacs.d/configs/main.el" "~/CODING/Erlang/erlangine/" "~/JOB/" "~/CODING/Erlang/market/" "~/.emacs.d/configs/" "~/.emacs.d/configs/main.el" "~/.emacs" "~/.emacs.d/configs/windata.el" "~/.emacs.d/configs/main.el" "~/.emacs" "~/.emacs.d/configs/tree-mode.el" "~/.emacs.d/configs/dirtree.el" "~/.emacs.d" "~/CODING/Erlang/erlpragmatic/src/mucc.erl" "~/CODING/Erlang/jcode/emacs.setup" "~/CODING/Erlang/erlbilling/soapbilling.erl" "~/CODING/Erlang/erlbilling/tables.hrl" "~/CODING/Erlang/erlbilling/billingserver.erl" "~/CODING/Erlang/socket/lib_chan_auth.erl" "~/CODING/Erlang/socket/mod_math.erl" "~/CODING/Erlang/erlang-learning/making_tdd_with_eunit/test/mobile_test.erl" "~/CODING/Erlang/erlang-learning/making_tdd_with_eunit/src/mobile.erl" "~/CODING/Erlang/erlang-learning/README" "~/CODING/Erlang/" "~/CODING/Erlang/erlangine/include/authkey.hrl" "~/CODING/Erlang/erlangine/src/enge2_web.erl"))
+(setq file-name-history '("~/.emacs" "~/.emacs.d/configs/" "~/CODING/test.lua" "~/CODING/Lua/test.lua"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/Users/artemart/.emacs.d/configs/init-speedbar.el"
-  "init-speedbar.el"
+  "/Users/artemart/.emacs"
+  ".emacs"
   'emacs-lisp-mode
   '(linum-mode)
-  975
+  945
   '(nil nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/.emacs.d/configs/main.el"
-  "main.el"
-  'emacs-lisp-mode
-  '(linum-mode)
-  1046
-  '(710 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/.emacs.d/configs/erlang.el"
-  "erlang.el"
-  'emacs-lisp-mode
-  '(linum-mode)
-  618
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  nil
-  "db"
-  'dired-mode
-  '(linum-mode)
-  241
-  '(nil nil)
-  t
-  '("/Users/artemart/CODING/Erlang/market/db/")
-  nil)
 
 (desktop-create-buffer 206
   nil
   "configs"
   'dired-mode
   '(linum-mode)
-  314
+  899
   '(nil nil)
   t
   '("/Users/artemart/.emacs.d/configs/")
   nil)
 
 (desktop-create-buffer 206
-  "/Users/artemart/.emacs"
-  ".emacs"
-  'emacs-lisp-mode
+  "/Users/artemart/CODING/test.lua"
+  "test.lua<2>"
+  'fundamental-mode
   '(linum-mode)
-  738
-  '(815 nil)
+  1
+  '(nil nil)
   nil
   nil
-  '((buffer-file-coding-system . undecided-unix)))
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/Lua/test.lua"
+  "test.lua"
+  'fundamental-mode
+  '(linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  nil)
 

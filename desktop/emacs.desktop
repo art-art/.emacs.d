@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Mar 19 22:42:23 2012
+;; Created Tue Mar 20 21:41:38 2012
 ;; Desktop file format version 206
 ;; Emacs version 23.4.1
 
@@ -10,53 +10,196 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring nil)
-(setq regexp-search-ring nil)
+(setq search-ring '("main" "startBook" "start" "_G" "main" "animateArrow" "Page" "Page1" "Page"))
+(setq regexp-search-ring '("timer"))
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs" "~/.emacs.d/configs/" "~/CODING/test.lua" "~/CODING/Lua/test.lua"))
+(setq file-name-history '("~/CODING/iOS/Corona-Comics-SDK-2.0/frames.lua" "~/CODING/Erlang/sgm/src/disp.erl" "~/CODING/iOS/Corona-Comics-SDK-2.0/main.lua" "~/CODING/iOS/Corona-Comics-SDK-2.0/build.settings" "~/CODING/test.lua" "~/.emacs" "~/.emacs.d/configs/" "~/CODING/test.lua" "~/CODING/Lua/test.lua"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/Users/artemart/.emacs"
-  ".emacs"
-  'emacs-lisp-mode
-  '(linum-mode)
-  945
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/main.lua"
+  "main.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  2301
+  '(10664 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/device.lua"
+  "device.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  1
   '(nil nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  nil
-  "configs"
-  'dired-mode
-  '(linum-mode)
-  899
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/cover.lua"
+  "cover.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  4808
   '(nil nil)
-  t
-  '("/Users/artemart/.emacs.d/configs/")
-  nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
 
 (desktop-create-buffer 206
-  "/Users/artemart/CODING/test.lua"
-  "test.lua<2>"
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/Page2.lua"
+  "Page2.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  582
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/ui.lua"
+  "ui.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  1535
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/Reader.lua"
+  "Reader.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  13218
+  '(12416 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/Bookart/main.lua"
+  "main.lua<2>"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/pageSize.lua"
+  "pageSize.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/build.settings"
+  "build.settings"
   'fundamental-mode
   '(linum-mode)
   1
   '(nil nil)
   nil
   nil
-  nil)
+  '((buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/artemart/CODING/Lua/test.lua"
-  "test.lua"
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/frames.lua"
+  "frames.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  5325
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/promote.lua"
+  "promote.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  3710
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/Page1.lua"
+  "Page1.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  872
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/coordinates.lua"
+  "coordinates.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/README"
+  "README"
   'fundamental-mode
   '(linum-mode)
   1
   '(nil nil)
   nil
   nil
-  nil)
+  '((buffer-file-coding-system . iso-latin-1-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/Erlang/sgm/src/disp.erl"
+  "disp.erl"
+  'erlang-mode
+  '(flymake-mode erlang-extended-mode linum-mode)
+  285
+  '(1313 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/iOS/Corona-Comics-SDK-2.0/Page3.lua"
+  "Page3.lua"
+  'lua-mode
+  '(abbrev-mode linum-mode)
+  1429
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(linum-mode)
+  763
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
 

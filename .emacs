@@ -24,5 +24,7 @@
 		  "flymake"
 		  "erlang"
 		  "theme"
+		  "lua-mode"
+		  "init-lua"
 		  "main"
 		))

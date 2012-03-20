@@ -50,6 +50,19 @@
 
 (add-to-list 'flymake-allowed-file-name-masks '("\\.erl\\'" flymake-erlang-init flymake/cleanup))
 
-(defun my-erlang-mode-hook ()
+(defun fmode-erlang-mode-hook ()
   (flymake-mode 1))
-(add-hook 'erlang-mode-common-hook 'my-erlang-mode-hook)
+
+(defun folding-erlang-mode-hook ()
+  (setq hs-special-modes-alist 
+	(cons '(erlang-mode 
+		"^\\([a-z][a-zA-Z0-9_]*\\|'[^\n']*[^\\]'\\)\\s *(" nil "%" 
+		erlang-end-of-clause) hs-special-modes-alist))
+  (hs-minor-mode 1)
+  (local-set-key [?\M-s] 'hs-toggle-hiding)
+  (local-set-key [?\M-h] 'hs-hide-all)
+  (local-set-key [?\M-u] 'hs-show-all))
+
+(add-hook 'erlang-mode-common-hook 'fmode-erlang-mode-hook)
+(add-hook 'erlang-mode-hook 'folding-erlang-mode-hook)
+

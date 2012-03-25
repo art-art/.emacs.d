@@ -16,7 +16,8 @@
     (message "Loaded config file: %s" file)
     ))
 
-(load-cfg-files '("sr-speedbar"
+(load-cfg-files '("dired+"
+		  "sr-speedbar"
 		  "tree-mode"
 		  "windata"
 		  "dirtree"
@@ -25,6 +26,10 @@
 		  "erlang"
 		  "theme"
 		  "lua-mode"
+		  ;;"flymake-lua"
+		  "init-windows"
+		  "init-org"
 		  "init-lua"
-		  "main"
+		  "init-common"
 		))
+(put 'dired-find-alternate-file 'disabled nil)

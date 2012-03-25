@@ -1,0 +1,10 @@
+(defun make-three-windows ()
+  "Make three windows"
+  (interactive)
+  (delete-other-windows)
+  ;(sr-speedbar-open)
+  (split-window-vertically)
+  (find-file "~/.org/work.org")
+  (split-window-horizontally)
+  (dired "~/")
+  )

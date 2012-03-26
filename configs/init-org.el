@@ -9,9 +9,9 @@
 (global-set-key "\e\ea" 'org-agenda)
 (global-set-key "\e\eb" 'org-iswitchb)
  
-(setq org-agenda-files (list "~/org/work.org"
-			     "~/org/education.org"
-			     "~/org/home.org"))
+(setq org-agenda-files (list "~/Dropbox/.org/work.org"
+			     "~/Dropbox/.org/education.org"
+			     "~/Dropbox/.org/home.org"))
 
 
 ;my prefer identation

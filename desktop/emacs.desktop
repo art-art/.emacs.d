@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sun Mar 25 16:14:40 2012
+;; Created Mon Mar 26 07:28:43 2012
 ;; Desktop file format version 206
 ;; Emacs version 23.4.1
 
@@ -13,19 +13,151 @@
 (setq search-ring '("function" "cancell" "or" "event" "prevpos" "ej"))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs.d/configs/init-windows.el" "~/CODING/iOS/" "~/.emacs.d/configs/dired+.el" "~/.emacs.d/configs/" "~/CODING/iOS/" "~/CODING/iOS/BookEj/" "~/.emacs.d/configs/" "~/.emacs.d/desktop/"))
+(setq file-name-history '("~/JOB/sgm/" "~/JOB/sgm/resource/desc.objs/items.json" "~/JOB/sgm/resource/desc.objs/quests.json" "~/JOB/sgm/" "~/JOB/sgm/resource/desc.objs/" "~/JOB/sgm/resource/desc.objs" "~/.emacs.d/configs/init-windows.el" "~/CODING/iOS/" "~/.emacs.d/configs/dired+.el" "~/.emacs.d/configs/" "~/CODING/iOS/" "~/CODING/iOS/BookEj/" "~/.emacs.d/configs/" "~/.emacs.d/desktop/"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/artemart/JOB/sgm/src/contr_levels.erl"
+  "contr_levels.erl"
+  'erlang-mode
+  '(flymake-mode erlang-extended-mode linum-mode hs-minor-mode)
+  143
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "src"
+  'dired-mode
+  '(linum-mode)
+  644
+  '(nil nil)
+  t
+  '("/Users/artemart/JOB/sgm/src/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/artemart/JOB/sgm/src/contr_register.erl"
+  "contr_register.erl"
+  'erlang-mode
+  '(flymake-mode erlang-extended-mode linum-mode hs-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/JOB/sgm/src/disp.erl"
+  "disp.erl"
+  'erlang-mode
+  '(flymake-mode erlang-extended-mode linum-mode hs-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/JOB/sgm/resource/desc.objs/items.json"
+  "items.json"
+  'fundamental-mode
+  '(linum-mode)
+  85
+  '(89 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/JOB/sgm/resource/desc.lvls/lvls.json"
+  "lvls.json"
+  'fundamental-mode
+  '(linum-mode)
+  120
+  '(112 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/JOB/sgm/resource/desc.objs/quests.json"
+  "quests.json"
+  'fundamental-mode
+  '(linum-mode)
+  2
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  ".git"
+  'dired-mode
+  '(linum-mode)
+  33
+  '(nil nil)
+  t
+  '("/Users/artemart/JOB/sgm/.git/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/artemart/JOB/sgm/src/session.erl"
+  "session.erl"
+  'erlang-mode
+  '(flymake-mode erlang-extended-mode linum-mode hs-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/JOB/sgm/src/sgm.erl"
+  "sgm.erl"
+  'erlang-mode
+  '(flymake-mode erlang-extended-mode linum-mode hs-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
 (desktop-create-buffer 206
   "/Users/artemart/.emacs.d/configs/init-windows.el"
   "init-windows.el<2>"
   'emacs-lisp-mode
   '(linum-mode)
-  220
+  83
   '(206 nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/org/education.org"
+  "education.org"
+  'org-mode
+  '(linum-mode org-indent-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/org/work.org"
+  "work.org<2>"
+  'org-mode
+  '(linum-mode org-indent-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((truncate-lines . t)))
 
 (desktop-create-buffer 206
   "/Users/artemart/.org/work.org"
@@ -37,70 +169,4 @@
   nil
   nil
   '((buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/CODING/iOS/Martian Control/thegame.lua"
-  "thegame.lua"
-  'lua-mode
-  '(abbrev-mode linum-mode)
-  5932
-  '(2586 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  nil
-  "init-windows.el"
-  'dired-mode
-  '(linum-mode)
-  114
-  '(nil nil)
-  t
-  '("/Users/artemart/.emacs.d/configs/init-windows.el")
-  nil)
-
-(desktop-create-buffer 206
-  nil
-  "iOS"
-  'dired-mode
-  '(linum-mode)
-  1266
-  '(569 nil)
-  t
-  '("/Users/artemart/CODING/iOS/" "/Users/artemart/CODING/iOS/BookEj/" "/Users/artemart/CODING/iOS/Corona-Pagecurl/" "/Users/artemart/CODING/iOS/Martian Control/" "/Users/artemart/CODING/iOS/slide-view/")
-  nil)
-
-(desktop-create-buffer 206
-  "/Users/artemart/.emacs"
-  ".emacs"
-  'emacs-lisp-mode
-  '(linum-mode)
-  823
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/CODING/iOS/slide-view/slideView.lua"
-  "slideView.lua"
-  'lua-mode
-  '(abbrev-mode linum-mode)
-  3873
-  '(3401 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/CODING/iOS/BookEj/page1.lua"
-  "page1.lua"
-  'lua-mode
-  '(abbrev-mode linum-mode)
-  2745
-  '(3144 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
 

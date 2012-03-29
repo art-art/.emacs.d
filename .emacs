@@ -17,6 +17,7 @@
     ))
 
 (load-cfg-files '("dired+"
+		  "hl-line+"
 		  "sr-speedbar"
 		  "tree-mode"
 		  "windata"

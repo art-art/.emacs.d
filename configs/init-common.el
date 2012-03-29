@@ -23,6 +23,8 @@
 (global-set-key [?\C-.] 'next-buffer)
 
 (require 'dirtree)
+(require 'hl-line+)
+(toggle-hl-line-when-idle 1)
 
 (setq desktop-dirname             "~/.emacs.d/desktop/"
       desktop-base-file-name      "emacs.desktop"

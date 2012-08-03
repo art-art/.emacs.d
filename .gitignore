@@ -1,6 +1,7 @@
 *~
-desktop/*
-el-get/*
-backups/*
-url/*
-semanticdb/*
+.git
+desktop/
+el-get/
+backups/
+url/
+semanticdb/

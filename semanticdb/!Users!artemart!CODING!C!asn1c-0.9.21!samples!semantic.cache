@@ -1,0 +1,33 @@
+;; Object samples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "samples/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("dist_bin_SCRIPTS" variable (:default-value ("crfc2asn1.pl" "clyx2asn1.pl")) nil [2 47])
+            ("ASN1_SOURCE_1" variable (:default-value ("rfc3280.txt")) nil [48 76])
+            ("ASN1_FILES_1" variable (:default-value ("rfc3280-PKIX1Explicit88.asn1" "rfc3280-PKIX1Implicit88.asn1")) nil [76 158])
+            ("ASN1_SOURCE_2" variable (:default-value ("rfc3525.txt")) nil [159 187])
+            ("ASN1_FILES_2" variable (:default-value ("rfc3525-MEDIA-GATEWAY-CONTROL.asn1")) nil [187 243])
+            ("ASN1_SOURCE_3" variable (:default-value ("rfc4511.txt")) nil [244 272])
+            ("ASN1_FILES_3" variable (:default-value ("rfc4511-Lightweight-Directory-Access-Protocol-V3.asn1")) nil [272 347])
+            ("all" function (:arguments ("$(ASN1_FILES_1)" "$(ASN1_FILES_2)" "$(ASN1_FILES_3)")) nil [348 401])
+            ("$(ASN1_FILES_1)" function (:arguments ("crfc2asn1.pl" "$(ASN1_SOURCE_1)")) nil [402 482])
+            ("$(ASN1_FILES_2)" function (:arguments ("crfc2asn1.pl" "$(ASN1_SOURCE_2)")) nil [483 563])
+            ("$(ASN1_FILES_3)" function (:arguments ("crfc2asn1.pl" "$(ASN1_SOURCE_3)")) nil [564 644])
+            ("EXTRA_DIST" variable (:default-value ("$(srcdir)/rfc*.txt" "$(srcdir)/sample.source.LDAP3" "$(srcdir)/sample.source.MEGACO" "$(srcdir)/sample.source.MHEG5" "$(srcdir)/sample.source.RRC" "$(srcdir)/sample.source.TAP3" "$(srcdir)/sample.source.PKIX1" "$(srcdir)/sample.makefile.regen")) nil [645 930])
+            ("dist-hook" function nil nil [931 1107])
+            ("CLEANFILES" variable (:default-value ("$(ASN1_FILES_1)" "$(ASN1_FILES_2)" "$(ASN1_FILES_3)")) nil [1108 1169])
+            ("clean-local" function nil nil [1170 1250]))          
+    :file "Makefile.am"
+    :pointmax 1250
+    :fsize 1249
+    :lastmodtime '(17679 32659)
+    :unmatched-syntax '((shell-command 1184 . 1249) (bol 1183 . 1183))
+    )
+   )
+  :file "!Users!artemart!CODING!C!asn1c-0.9.21!samples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,2156 @@
+;; Object libasn1parser/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libasn1parser/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CFLAGS" variable (:default-value ("@ADD_CFLAGS@")) nil [2 27])
+            ("AM_YFLAGS" variable (:default-value ("-p" "asn1p_" "-d")) nil [27 53])
+            ("AM_LFLAGS" variable (:default-value ("-s" "-p" "-Cem" "-Pasn1p_" "-olex.yy.c")) nil [53 96])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libasn1parser.la")) nil [97 135])
+            ("libasn1parser_la_LDFLAGS" variable (:default-value ("-all-static")) nil [136 175])
+            ("libasn1parser_la_SOURCES" variable (:default-value ("asn1parser.c" "asn1parser.h" "asn1p_y.y" "asn1p_l.l" "asn1p_module.c" "asn1p_module.h" "asn1p_oid.c" "asn1p_oid.h" "asn1p_value.c" "asn1p_value.h" "asn1p_expr.c" "asn1p_expr.h" "asn1p_expr_str.h" "asn1p_expr2uclass.h" "asn1p_xports.c" "asn1p_xports.h" "asn1p_constr.c" "asn1p_constr.h" "asn1p_param.c" "asn1p_param.h" "asn1p_class.c" "asn1p_class.h" "asn1p_ref.c" "asn1p_ref.h" "asn1p_list.h")) nil [175 594])
+            ("asn1parser.h" function (:arguments ("asn1p_expr_str.h")) nil [595 626])
+            ("asn1p_expr_str.h" function (:arguments ("expr-h.pl" "asn1p_expr.h")) nil [627 699])
+            ("EXTRA_DIST" variable (:default-value ("expr-h.pl")) nil [700 723]))          
+    :file "Makefile.am"
+    :pointmax 723
+    :fsize 722
+    :lastmodtime '(17670 17240)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "asn1parser.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1PARSER_H" variable (:constant-flag t) nil [79 91])
+            ("asn1c_integer_t" type
+               (:typedef ("intmax_t" type (:type "class") nil nil)
+                :superclasses "intmax_t"
+                :type "typedef")
+                nil [981 1014])
+            ("PRIdASN" variable (:constant-flag t) nil [1092 1099])
+            ("PRIuASN" variable (:constant-flag t) nil [1126 1133])
+            ("asn1p_list.h" include nil nil [1160 1183])
+            ("asn1p_oid.h" include nil nil [1184 1206])
+            ("asn1p_ref.h" include nil nil [1240 1262])
+            ("asn1p_value.h" include nil nil [1297 1321])
+            ("asn1p_param.h" include nil nil [1345 1369])
+            ("asn1p_constr.h" include nil nil [1393 1418])
+            ("asn1p_xports.h" include nil nil [1442 1467])
+            ("asn1p_module.h" include nil nil [1490 1515])
+            ("asn1p_class.h" include nil nil [1546 1570])
+            ("asn1p_expr.h" include nil nil [1597 1620])
+            ("asn1p_flags" type
+               (:members 
+                  ( ("A1P_NOFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1699 1711])
+                    ("A1P_LEXER_DEBUG" variable
+                       (:constant-flag t
+                        :default-value (1790 1796)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1770 1796]))                  
+                :type "enum")
+                nil [1679 1799])
+            ("asn1p_parse_file" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1920 1941])
+                    ("" variable (:type ("asn1p_flags" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [1943 1960]))                  
+                :type ("asn1p_t" type (:type "class") nil nil))
+                nil [1894 1961])
+            ("asn1p_parse_buffer" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1990 2009])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2010 2030])
+                    ("" variable (:type ("asn1p_flags" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [2032 2049]))                  
+                :type ("asn1p_t" type (:type "class") nil nil))
+                nil [1962 2050])
+            ("asn1p_atoi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2067 2083])
+                    ("r_value" variable
+                       (:pointer 1
+                        :type ("asn1c_integer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2084 2109]))                  
+                :type "int")
+                nil [2052 2110]))          
+    :file "asn1parser.h"
+    :pointmax 2138
+    :fsize 2137
+    :lastmodtime '(17439 30134)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ASN1PARSER_H")
+          ("PRIdASN" . ((string "\"lld\"" 1100 . 1105)))
+          ("PRIuASN" . ((string "\"llu\"" 1134 . 1139)))
+          )
+
+    )
+   (semanticdb-table "asn1p_list.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_LIST_H" variable (:constant-flag t) nil [80 98])
+            ("TQ_HEAD" variable (:constant-flag t) nil [108 115])
+            ("TQ_MOVE" variable (:constant-flag t) nil [200 207])
+            ("TQ_ENTRY" variable (:constant-flag t) nil [436 444])
+            ("TQ_FIRST" variable (:constant-flag t) nil [507 515])
+            ("TQ_NEXT" variable (:constant-flag t) nil [551 558])
+            ("TQ_INIT" variable (:constant-flag t) nil [601 608])
+            ("TQ_FOR" variable (:constant-flag t) nil [715 721])
+            ("TQ_ADD" variable (:constant-flag t) nil [892 898])
+            ("TQ_REMOVE" variable (:constant-flag t) nil [1161 1170]))          
+    :file "asn1p_list.h"
+    :pointmax 1489
+    :fsize 1488
+    :lastmodtime '(16927 13674)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TQ_HEAD" (spp-arg-list ("type") 115 . 121) . ((STRUCT "struct" 129 . 135) (semantic-list "{					\\
+		type *tq_head;				\\
+		type**tq_tail;				\\
+	}" 136 . 190)))
+          ("TQ_NEXT" (spp-arg-list ("el" "field") 558 . 569) . ((semantic-list "((el)->field.tq_next)" 570 . 591)))
+          ("TQ_ADD" (spp-arg-list ("head" "xel" "field") 898 . 916) . 
+              ((DO "do" 917 . 919) (semantic-list "{			\\
+	typeof(xel) __el = (xel);			\\
+	assert(TQ_NEXT((__el), field) == 0);		\\
+        *(head)->tq_tail = (__el);			\\
+        (head)->tq_tail = &TQ_NEXT((__el), field);	\\
+	}" 920 . 1092) (WHILE "while" 1093 . 1098) (semantic-list "(0)" 1098 . 1101)))
+          ("TQ_FOR" (spp-arg-list ("var" "head" "field") 721 . 739) . ((FOR "for" 745 . 748) (semantic-list "((var) = TQ_FIRST((head));			\\
+		(var); (var) = TQ_NEXT((var), field))" 748 . 818)))
+          ("TQ_MOVE" (spp-arg-list ("to" "from") 207 . 217) . 
+              ((DO "do" 218 . 220) (semantic-list "{			\\
+	if(&(TQ_FIRST(from)) == (from)->tq_tail) {	\\
+		TQ_INIT(to);				\\
+	} else {					\\
+		(to)->tq_head = (from)->tq_head;	\\
+		(to)->tq_tail = (from)->tq_tail;	\\
+	}						\\
+	TQ_INIT(from);					\\
+	}" 221 . 417) (WHILE "while" 418 . 423) (semantic-list "(0)" 423 . 426)))
+          ("TQ_ENTRY" (spp-arg-list ("type") 444 . 450) . ((STRUCT "struct" 458 . 464) (semantic-list "{					\\
+		type *tq_next;				\\
+	}" 465 . 497)))
+          ("ASN1_PARSER_LIST_H")
+          ("TQ_INIT" (spp-arg-list ("head") 608 . 614) . 
+              ((DO "do" 615 . 617) (semantic-list "{				\\
+	TQ_FIRST((head)) = 0;				\\
+	(head)->tq_tail = &TQ_FIRST((head));		\\
+	}" 618 . 696) (WHILE "while" 697 . 702) (semantic-list "(0)" 702 . 705)))
+          ("TQ_FIRST" (spp-arg-list ("headp") 515 . 522) . ((semantic-list "((headp)->tq_head)" 524 . 542)))
+          ("TQ_REMOVE" (spp-arg-list ("head" "field") 1170 . 1183) . ((semantic-list "({			\\
+	typeof(TQ_FIRST((head))) __fel;			\\
+	__fel = TQ_FIRST((head));			\\
+	if(__fel == 0					\\
+	|| (TQ_FIRST((head)) = TQ_NEXT(__fel, field))	\\
+		== 0) {					\\
+		(head)->tq_tail = &TQ_FIRST((head));	\\
+	} else {					\\
+		TQ_NEXT(__fel, field) = 0;		\\
+	}						\\
+	__fel; })" 1184 . 1454)))
+          )
+
+    )
+   (semanticdb-table "asn1p_oid.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_OID_H" variable (:constant-flag t) nil [75 92])
+            ("asn1p_oid_arc_t" type
+               (:typedef ("asn1p_oid_arc_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_oid_arc_s"
+                :type "typedef")
+                nil [261 401])
+            ("asn1p_oid_arc_s" type
+               (:members 
+                  ( ("number" variable (:type ("asn1c_integer_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [295 318])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [348 359]))                  
+                :type "struct")
+                nil [261 401])
+            ("asn1p_oid_arc_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("optName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [468 488])
+                    ("optNumber" variable (:type ("asn1c_integer_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [489 526]))                  
+                :type ("asn1p_oid_arc_t" type (:type "class") nil nil))
+                nil [431 527])
+            ("asn1p_oid_arc_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_oid_arc_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [578 596]))                  
+                :type "void")
+                nil [554 597])
+            ("asn1p_oid_t" type
+               (:typedef ("asn1p_oid_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_oid_s"
+                :type "typedef")
+                nil [811 895])
+            ("asn1p_oid_s" type
+               (:members 
+                  ( ("arcs" variable
+                       (:pointer 1
+                        :type ("asn1p_oid_arc_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [841 863])
+                    ("arcs_count" variable (:type "int") (reparse-symbol classsubparts) [865 880]))                  
+                :type "struct")
+                nil [811 895])
+            ("asn1p_oid_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [952 957]))                  
+                :type ("asn1p_oid_t" type (:type "class") nil nil))
+                nil [925 958])
+            ("asn1p_oid_construct" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_oid_arc_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [992 1010])
+                    ("narcs" variable (:type "int") (reparse-symbol arg-sub-list) [1011 1021]))                  
+                :type ("asn1p_oid_t" type (:type "class") nil nil))
+                nil [959 1022])
+            ("asn1p_oid_add_arc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_oid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1102 1116])
+                    ("" variable
+                       (:pointer 1
+                        :type ("asn1p_oid_arc_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1117 1142]))                  
+                :type "int")
+                nil [1080 1144])
+            ("asn1p_oid_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_oid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1192 1206]))                  
+                :type "void")
+                nil [1172 1207])
+            ("asn1p_oid_compare" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("asn1p_oid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1314 1329])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("asn1p_oid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1330 1345]))                  
+                :type "int")
+                nil [1292 1346]))          
+    :file "asn1p_oid.h"
+    :pointmax 1380
+    :fsize 1379
+    :lastmodtime '(17420 19540)
+    :unmatched-syntax '((TEMPLATE 1134 . 1142))
+    :lexical-table 
+        '(("ASN1_PARSER_OID_H")
+          )
+
+    )
+   (semanticdb-table "asn1p_ref.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_REFERENCE_H" variable (:constant-flag t) nil [112 135])
+            ("asn1p_ref_t" type
+               (:typedef ("asn1p_ref_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_ref_s"
+                :type "typedef")
+                nil [137 1065])
+            ("asn1p_ref_s" type
+               (:members 
+                  ( ("asn1p_ref_component_s" type
+                       (:members 
+                          ( ("asn1p_ref_lex_type_e" type
+                               (:members 
+                                  ( ("RLT_UNKNOWN" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [386 398])
+                                    ("RLT_CAPITALS" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [622 635])
+                                    ("RLT_Uppercase" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [639 653])
+                                    ("RLT_lowercase" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [657 671])
+                                    ("RLT_AmpUppercase" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [675 692])
+                                    ("RLT_Amplowercase" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [696 713])
+                                    ("RLT_Atlowercase" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [717 733])
+                                    ("RLT_AtDotlowercase" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [737 756])
+                                    ("RLT_MAX" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [760 771]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [355 781])
+                            ("lex_type" variable (:type ("asn1p_ref_lex_type_e" type
+                                 (:prototype t
+                                  :type "enum")
+                                  nil nil)) (reparse-symbol classsubparts) [355 781])
+                            ("name" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [830 841]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [322 877])
+                    ("components" variable
+                       (:pointer 1
+                        :type ("asn1p_ref_component_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [322 877])
+                    ("comp_count" variable (:type "int") (reparse-symbol classsubparts) [880 895])
+                    ("comp_size" variable (:type "int") (reparse-symbol classsubparts) [951 965])
+                    ("_lineno" variable (:type "int") (reparse-symbol classsubparts) [1005 1017]))                  
+                :type "struct")
+                nil [137 1065])
+            ("asn1p_ref_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("_lineno" variable (:type "int") (reparse-symbol arg-sub-list) [1132 1144]))                  
+                :type ("asn1p_ref_t" type (:type "class") nil nil))
+                nil [1105 1145])
+            ("asn1p_ref_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_ref_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1166 1180]))                  
+                :type "void")
+                nil [1146 1181])
+            ("asn1p_ref_clone" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ref" variable
+                       (:pointer 1
+                        :type ("asn1p_ref_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1212 1229]))                  
+                :type ("asn1p_ref_t" type (:type "class") nil nil))
+                nil [1183 1230])
+            ("asn1p_ref_add_component" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_ref_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1448 1462])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1464 1475])
+                    ("" variable (:type ("asn1p_ref_lex_type_e" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [1476 1502]))                  
+                :type "int")
+                nil [1420 1503]))          
+    :file "asn1p_ref.h"
+    :pointmax 1542
+    :fsize 1541
+    :lastmodtime '(16574 40262)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ASN1_PARSER_REFERENCE_H")
+          )
+
+    )
+   (semanticdb-table "asn1p_value.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_VALUE_H" variable (:constant-flag t) nil [86 105])
+            ("asn1p_constraint_s" type
+               (:prototype t
+                :type "struct")
+                nil [107 133])
+            ("asn1p_expr_s" type
+               (:prototype t
+                :type "struct")
+                nil [160 180])
+            ("asn1p_value_t" type
+               (:typedef ("asn1p_value_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_value_s"
+                :type "typedef")
+                nil [234 1341])
+            ("asn1p_value_s" type
+               (:members 
+                  ( ("type" variable (:type ("" type
+                         (:members 
+                            ( ("ATV_NOVALUE" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [314 326])
+                              ("ATV_TYPE" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [329 338])
+                              ("ATV_NULL" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [378 387])
+                              ("ATV_REAL" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [425 434])
+                              ("ATV_INTEGER" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [475 487])
+                              ("ATV_MAX" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [516 524])
+                              ("ATV_MIN" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [527 535])
+                              ("ATV_TRUE" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [538 547])
+                              ("ATV_FALSE" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [550 560])
+                              ("ATV_TUPLE" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [563 573])
+                              ("ATV_QUADRUPLE" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [592 606])
+                              ("ATV_STRING" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [633 644])
+                              ("ATV_UNPARSED" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [662 675])
+                              ("ATV_BITVECTOR" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [678 692])
+                              ("ATV_VALUESET" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [695 708])
+                              ("ATV_REFERENCED" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [731 746])
+                              ("ATV_CHOICE_IDENTIFIER" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [794 816]))                            
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [305 854])
+                    ("value" variable (:type ("" type
+                         (:members 
+                            ( ("constraint" variable
+                                 (:pointer 1
+                                  :type ("asn1p_constraint_s" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [897 935])
+                              ("v_type" variable
+                                 (:pointer 1
+                                  :type ("asn1p_expr_s" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [953 981])
+                              ("reference" variable
+                                 (:pointer 1
+                                  :type ("asn1p_ref_t" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [995 1018])
+                              ("v_integer" variable (:type ("asn1c_integer_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1021 1048])
+                              ("v_double" variable (:type "double") (reparse-symbol classsubparts) [1051 1069])
+                              ("string" variable (:type ("" type
+                                   (:members 
+                                      ( ("buf" variable
+                                           (:pointer 1
+                                            :type ("uint8_t" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [1120 1133])
+                                        ("size" variable (:type "int") (reparse-symbol classsubparts) [1137 1146]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [1108 1158])
+                              ("binary_vector" variable (:type ("" type
+                                   (:members 
+                                      ( ("bits" variable
+                                           (:pointer 1
+                                            :type ("uint8_t" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [1173 1187])
+                                        ("size_in_bits" variable (:type "int") (reparse-symbol classsubparts) [1191 1208]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [1161 1227])
+                              ("choice_identifier" variable (:type ("" type
+                                   (:members 
+                                      ( ("identifier" variable
+                                           (:pointer 1
+                                            :type "char")
+                                            (reparse-symbol classsubparts) [1242 1259])
+                                        ("value" variable
+                                           (:pointer 1
+                                            :type ("asn1p_value_s" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil))
+                                            (reparse-symbol classsubparts) [1263 1291]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [1230 1314]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [887 1324]))                  
+                :type "struct")
+                nil [234 1341])
+            ("asn1p_value_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_value_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1605 1621]))                  
+                :type "void")
+                nil [1583 1622])
+            ("asn1p_value_fromref" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ref" variable
+                       (:pointer 1
+                        :type ("asn1p_ref_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1658 1675])
+                    ("do_copy" variable (:type "int") (reparse-symbol arg-sub-list) [1676 1688]))                  
+                :type ("asn1p_value_t" type (:type "class") nil nil))
+                nil [1623 1689])
+            ("asn1p_value_fromconstr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ct" variable
+                       (:pointer 1
+                        :type ("asn1p_constraint_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1728 1758])
+                    ("dc" variable (:type "int") (reparse-symbol arg-sub-list) [1759 1766]))                  
+                :type ("asn1p_value_t" type (:type "class") nil nil))
+                nil [1690 1767])
+            ("asn1p_value_frombits" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("bits" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1804 1818])
+                    ("size_in_bits" variable (:type "int") (reparse-symbol arg-sub-list) [1819 1836])
+                    ("dc" variable (:type "int") (reparse-symbol arg-sub-list) [1837 1844]))                  
+                :type ("asn1p_value_t" type (:type "class") nil nil))
+                nil [1768 1845])
+            ("asn1p_value_frombuf" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1881 1894])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1895 1904])
+                    ("do_copy" variable (:type "int") (reparse-symbol arg-sub-list) [1905 1917]))                  
+                :type ("asn1p_value_t" type (:type "class") nil nil))
+                nil [1846 1918])
+            ("asn1p_value_fromdouble" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [1957 1964]))                  
+                :type ("asn1p_value_t" type (:type "class") nil nil))
+                nil [1919 1965])
+            ("asn1p_value_fromint" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("asn1c_integer_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2001 2017]))                  
+                :type ("asn1p_value_t" type (:type "class") nil nil))
+                nil [1966 2018])
+            ("asn1p_value_fromtype" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_expr_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2055 2077]))                  
+                :type ("asn1p_value_t" type (:type "class") nil nil))
+                nil [2019 2078])
+            ("asn1p_value_clone" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_value_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2112 2128]))                  
+                :type ("asn1p_value_t" type (:type "class") nil nil))
+                nil [2079 2129])
+            ("asn1p_value_clone_with_resolver" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_value_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2177 2193])
+                    ("" variable
+                       (:pointer 1
+                        :type ("asn1p_value_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2196 2222])
+                    ("rarg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2255 2266]))                  
+                :type ("asn1p_value_t" type (:type "class") nil nil))
+                nil [2130 2267]))          
+    :file "asn1p_value.h"
+    :pointmax 2302
+    :fsize 2301
+    :lastmodtime '(17676 44352)
+    :unmatched-syntax '((semantic-list 2222 . 2251) (semantic-list 2211 . 2222))
+    :lexical-table 
+        '(("ASN1_PARSER_VALUE_H")
+          )
+
+    )
+   (semanticdb-table "asn1p_param.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_PARAMETERIZATION_H" variable (:constant-flag t) nil [112 142])
+            ("asn1p_expr_s" type
+               (:prototype t
+                :type "struct")
+                nil [144 164])
+            ("asn1p_paramlist_t" type
+               (:typedef ("asn1p_paramlist_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_paramlist_s"
+                :type "typedef")
+                nil [192 402])
+            ("asn1p_paramlist_s" type
+               (:members 
+                  ( ("asn1p_param_s" type
+                       (:members 
+                          ( ("governor" variable
+                               (:pointer 1
+                                :type ("asn1p_ref_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [277 299])
+                            ("argument" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [302 318]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [228 330])
+                    ("params" variable
+                       (:pointer 1
+                        :type ("asn1p_param_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [228 330])
+                    ("params_count" variable (:type "int") (reparse-symbol classsubparts) [332 349])
+                    ("params_size" variable (:type "int") (reparse-symbol classsubparts) [351 367])
+                    ("_lineno" variable (:type "int") (reparse-symbol classsubparts) [369 381]))                  
+                :type "struct")
+                nil [192 402])
+            ("asn1p_paramlist_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("_lineno" variable (:type "int") (reparse-symbol arg-sub-list) [481 493]))                  
+                :type ("asn1p_paramlist_t" type (:type "class") nil nil))
+                nil [442 494])
+            ("asn1p_paramlist_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_paramlist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [521 541]))                  
+                :type "void")
+                nil [495 542])
+            ("asn1p_paramlist_clone" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ref" variable
+                       (:pointer 1
+                        :type ("asn1p_paramlist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [585 608]))                  
+                :type ("asn1p_paramlist_t" type (:type "class") nil nil))
+                nil [544 609])
+            ("asn1p_paramlist_add_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_paramlist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [641 661])
+                    ("opt_gov" variable
+                       (:pointer 1
+                        :type ("asn1p_ref_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [664 685])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [686 696]))                  
+                :type "int")
+                nil [611 697]))          
+    :file "asn1p_param.h"
+    :pointmax 744
+    :fsize 743
+    :lastmodtime '(17439 34190)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ASN1_PARSER_PARAMETERIZATION_H")
+          )
+
+    )
+   (semanticdb-table "asn1p_constr.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_CONSTRAINT_H" variable (:constant-flag t) nil [70 94])
+            ("asn1p_constraint_t" type
+               (:typedef ("asn1p_constraint_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_constraint_s"
+                :type "typedef")
+                nil [96 1737])
+            ("asn1p_constraint_s" type
+               (:members 
+                  ( ("asn1p_constraint_type_e" type
+                       (:members 
+                          ( ("ACT_INVALID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [167 179])
+                            ("ACT_EL_TYPE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [241 253])
+                            ("ACT_EL_VALUE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [285 298])
+                            ("ACT_EL_RANGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [337 350])
+                            ("ACT_EL_LLRANGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [384 399])
+                            ("ACT_EL_RLRANGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [434 449])
+                            ("ACT_EL_ULRANGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [484 499])
+                            ("ACT_EL_EXT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [535 546])
+                            ("ACT_CT_SIZE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [615 627])
+                            ("ACT_CT_FROM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [658 670])
+                            ("ACT_CT_WCOMP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [701 714])
+                            ("ACT_CT_WCOMPS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [739 753])
+                            ("ACT_CT_CTDBY" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [779 792])
+                            ("ACT_CT_CTNG" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [817 829])
+                            ("ACT_CA_SET" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [894 905])
+                            ("ACT_CA_CRC" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [946 957])
+                            ("ACT_CA_CSV" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [997 1008])
+                            ("ACT_CA_UNI" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1052 1063])
+                            ("ACT_CA_INT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1083 1094])
+                            ("ACT_CA_EXC" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1121 1132])
+                            ("ACT_CA_AEX" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1149 1160]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [134 1187])
+                    ("type" variable (:type ("asn1p_constraint_type_e" type
+                         (:prototype t
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [134 1187])
+                    ("asn1p_constr_pres_e" type
+                       (:members 
+                          ( ("ACPRES_DEFAULT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1219 1234])
+                            ("ACPRES_PRESENT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1237 1252])
+                            ("ACPRES_ABSENT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1255 1269])
+                            ("ACPRES_OPTIONAL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1272 1288]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1190 1301])
+                    ("presence" variable (:type ("asn1p_constr_pres_e" type
+                         (:prototype t
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [1190 1301])
+                    ("containedSubtype" variable
+                       (:pointer 1
+                        :type ("asn1p_value_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1344 1376])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("asn1p_value_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1378 1399])
+                    ("range_start" variable
+                       (:pointer 1
+                        :type ("asn1p_value_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1401 1428])
+                    ("range_stop" variable
+                       (:pointer 1
+                        :type ("asn1p_value_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1430 1456])
+                    ("elements" variable
+                       (:pointer 2
+                        :type ("asn1p_constraint_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1509 1546])
+                    ("el_count" variable (:type "unsigned int") (reparse-symbol classsubparts) [1548 1570])
+                    ("el_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [1608 1629])
+                    ("_lineno" variable (:type "int") (reparse-symbol classsubparts) [1671 1683]))                  
+                :type "struct")
+                nil [96 1737])
+            ("asn1p_constraint_type2str" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("asn1p_constraint_type_e" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [1820 1849]))                  
+                :type "char")
+                nil [1788 1850])
+            ("asn1p_constraint_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("_lineno" variable (:type "int") (reparse-symbol arg-sub-list) [1944 1956]))                  
+                :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                nil [1903 1957])
+            ("asn1p_constraint_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1985 2006]))                  
+                :type "void")
+                nil [1958 2007])
+            ("asn1p_constraint_clone" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("source_to_clone" variable
+                       (:pointer 1
+                        :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2105 2141]))                  
+                :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                nil [2062 2142])
+            ("asn1p_constraint_clone_with_resolver" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("source_to_clone" variable
+                       (:pointer 1
+                        :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2202 2238])
+                    ("" variable
+                       (:pointer 1
+                        :type ("asn1p_value_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2240 2266])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2293 2300]))                  
+                :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                nil [2143 2301])
+            ("asn1p_constraint_insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("into" variable
+                       (:pointer 1
+                        :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2412 2437])
+                    ("what" variable
+                       (:pointer 1
+                        :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2438 2463]))                  
+                :type "int")
+                nil [2384 2464])
+            ("asn1p_constraint_prepend" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("before" variable
+                       (:pointer 1
+                        :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2494 2521])
+                    ("what" variable
+                       (:pointer 1
+                        :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2522 2547]))                  
+                :type "int")
+                nil [2465 2548]))          
+    :file "asn1p_constr.h"
+    :pointmax 2588
+    :fsize 2587
+    :lastmodtime '(17676 47054)
+    :unmatched-syntax '((semantic-list 2266 . 2291) (semantic-list 2255 . 2266))
+    :lexical-table 
+        '(("ASN1_PARSER_CONSTRAINT_H")
+          )
+
+    )
+   (semanticdb-table "asn1p_xports.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSE_XPORTS_H" variable (:constant-flag t) nil [78 97])
+            ("asn1p_xports_t" type
+               (:typedef ("asn1p_xports_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_xports_s"
+                :type "typedef")
+                nil [100 704])
+            ("asn1p_xports_s" type
+               (:members 
+                  ( ("asn1p_xports" type
+                       (:members 
+                          ( ("XPT_IMPORTS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [198 210])
+                            ("XPT_EXPORTS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [213 225]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [176 241])
+                    ("xports_type" variable (:type ("asn1p_xports" type
+                         (:prototype t
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [176 241])
+                    ("fromModuleName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [305 326])
+                    ("AssignedIdentifier" type
+                       (:members 
+                          ( ("oid" variable
+                               (:pointer 1
+                                :type ("asn1p_oid_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [384 401])
+                            ("value" variable
+                               (:pointer 1
+                                :type ("asn1p_value_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [437 458]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [354 492])
+                    ("identifier" variable (:type ("AssignedIdentifier" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [354 492])
+                    ("members" variable (:type "int") (reparse-symbol classsubparts) [567 575])
+                    ("xp_next" variable (:type "int") (reparse-symbol classsubparts) [678 686]))                  
+                :type "struct")
+                nil [100 704])
+            ("asn1p_xports_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [777 782]))                  
+                :type ("asn1p_xports_t" type (:type "class") nil nil))
+                nil [744 783])
+            ("asn1p_xports_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_xports_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [807 824]))                  
+                :type "void")
+                nil [784 825]))          
+    :file "asn1p_xports.h"
+    :pointmax 860
+    :fsize 859
+    :lastmodtime '(17148 30022)
+    :unmatched-syntax '((semantic-list 654 . 677) (symbol 646 . 654) (semantic-list 545 . 566) (symbol 538 . 545))
+    :lexical-table 
+        '(("ASN1_PARSE_XPORTS_H")
+          )
+
+    )
+   (semanticdb-table "asn1p_module.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_MODULE_H" variable (:constant-flag t) nil [104 124])
+            ("asn1p_module_s" type
+               (:prototype t
+                :type "struct")
+                nil [126 148])
+            ("asn1p_t" type
+               (:typedef ("asn1p_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_s"
+                :type "typedef")
+                nil [200 276])
+            ("asn1p_s" type
+               (:members 
+                  ( ("modules" variable (:type "int") (reparse-symbol classsubparts) [257 265]))                  
+                :type "struct")
+                nil [200 276])
+            ("asn1p_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [297 302]))                  
+                :type ("asn1p_t" type (:type "class") nil nil))
+                nil [278 303])
+            ("asn1p_delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("asn" variable
+                       (:pointer 1
+                        :type ("asn1p_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [322 335]))                  
+                :type "void")
+                nil [304 336])
+            ("asn1p_module_flags_e" type
+               (:typedef ("asn1p_module_flags" type (:type "enum") nil nil)
+                :superclasses "asn1p_module_flags"
+                :type "typedef")
+                nil [376 667])
+            ("asn1p_module_flags" type
+               (:members 
+                  ( ("MSF_NOFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [411 423])
+                    ("MSF_unk_INSTRUCTIONS" variable
+                       (:constant-flag t
+                        :default-value (449 454)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [425 454])
+                    ("MSF_TAG_INSTRUCTIONS" variable
+                       (:constant-flag t
+                        :default-value (481 486)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [457 486])
+                    ("MSF_XER_INSTRUCTIONS" variable
+                       (:constant-flag t
+                        :default-value (513 518)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [489 518])
+                    ("MSF_EXPLICIT_TAGS" variable
+                       (:constant-flag t
+                        :default-value (542 547)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [521 547])
+                    ("MSF_IMPLICIT_TAGS" variable
+                       (:constant-flag t
+                        :default-value (571 576)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [550 576])
+                    ("MSF_AUTOMATIC_TAGS" variable
+                       (:constant-flag t
+                        :default-value (601 606)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [579 606])
+                    ("MSF_EXTENSIBILITY_IMPLIED" variable
+                       (:constant-flag t
+                        :default-value (637 642)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [609 642]))                  
+                :type "enum")
+                nil [376 667])
+            ("MSF_MASK_INSTRUCTIONS" variable (:constant-flag t) nil [676 697])
+            ("MSF_MASK_TAGS" variable (:constant-flag t) nil [712 725])
+            ("asn1p_module_t" type
+               (:typedef ("asn1p_module_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_module_s"
+                :type "typedef")
+                nil [841 1768])
+            ("asn1p_module_s" type
+               (:members 
+                  ( ("source_file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [913 936])
+                    ("ModuleName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [985 1002])
+                    ("module_oid" variable
+                       (:pointer 1
+                        :type ("asn1p_oid_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1049 1073])
+                    ("module_flags" variable (:type ("asn1p_module_flags_e" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1136 1170])
+                    ("exports" variable (:type "int") (reparse-symbol classsubparts) [1284 1292])
+                    ("imports" variable (:type "int") (reparse-symbol classsubparts) [1384 1392])
+                    ("members" variable (:type "int") (reparse-symbol classsubparts) [1489 1497])
+                    ("mod_next" variable (:type "int") (reparse-symbol classsubparts) [1572 1581])
+                    ("asn1p" variable
+                       (:pointer 1
+                        :type ("asn1p_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1603 1618])
+                    ("_tags" variable (:type ("" type
+                         (:members 
+                            ( ("MT_STANDARD_MODULE" variable
+                                 (:constant-flag t
+                                  :default-value (1695 1699)
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [1674 1699]))                            
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [1664 1750]))                  
+                :type "struct")
+                nil [841 1768])
+            ("asn1p_module_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1841 1846]))                  
+                :type ("asn1p_module_t" type (:type "class") nil nil))
+                nil [1808 1847])
+            ("asn1p_module_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mod" variable
+                       (:pointer 1
+                        :type ("asn1p_module_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1871 1891]))                  
+                :type "void")
+                nil [1848 1892]))          
+    :file "asn1p_module.h"
+    :pointmax 1928
+    :fsize 1927
+    :lastmodtime '(17676 45057)
+    :unmatched-syntax '((semantic-list 1546 . 1569) (symbol 1538 . 1546) (semantic-list 1467 . 1488) (symbol 1460 . 1467) (semantic-list 1360 . 1383) (symbol 1353 . 1360) (semantic-list 1260 . 1283) (symbol 1253 . 1260) (semantic-list 233 . 256) (symbol 226 . 233))
+    :lexical-table 
+        '(("ASN1_PARSER_MODULE_H")
+          ("MSF_MASK_TAGS" . ((number "0xf0" 728 . 732)))
+          ("MSF_MASK_INSTRUCTIONS" . ((number "0x0f" 699 . 703)))
+          )
+
+    )
+   (semanticdb-table "asn1p_class.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_CLASS_H" variable (:constant-flag t) nil [68 87])
+            ("asn1p_ref.h" include nil nil [89 111])
+            ("asn1p_expr_s" type
+               (:prototype t
+                :type "struct")
+                nil [113 133])
+            ("asn1p_ioc_row_t" type
+               (:typedef ("asn1p_ioc_row_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_ioc_row_s"
+                :type "typedef")
+                nil [161 409])
+            ("asn1p_ioc_row_s" type
+               (:members 
+                  ( ("asn1p_ioc_cell_s" type
+                       (:members 
+                          ( ("field" variable
+                               (:pointer 1
+                                :type ("asn1p_expr_s" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [223 250])
+                            ("value" variable
+                               (:pointer 1
+                                :type ("asn1p_expr_s" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [277 304]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [195 348])
+                    ("column" variable
+                       (:pointer 1
+                        :type ("asn1p_ioc_cell_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [195 348])
+                    ("columns" variable (:type "int") (reparse-symbol classsubparts) [350 362])
+                    ("max_identifier_length" variable (:type "int") (reparse-symbol classsubparts) [364 390]))                  
+                :type "struct")
+                nil [161 409])
+            ("asn1p_ioc_row_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("oclass" variable
+                       (:pointer 1
+                        :type ("asn1p_expr_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [446 474]))                  
+                :type ("asn1p_ioc_row_t" type (:type "class") nil nil))
+                nil [411 475])
+            ("asn1p_ioc_row_delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_ioc_row_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [502 520]))                  
+                :type "void")
+                nil [476 521])
+            ("asn1p_ioc_row_cell_fetch" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_ioc_row_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [572 590])
+                    ("fieldname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [593 615]))                  
+                :type ("asn1p_ioc_cell_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [522 616])
+            ("asn1p_wsyntx_chunk_t" type
+               (:typedef ("asn1p_wsyntx_chunk_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_wsyntx_chunk_s"
+                :type "typedef")
+                nil [658 1034])
+            ("asn1p_wsyntx_chunk_s" type
+               (:members 
+                  ( ("type" variable (:type ("" type
+                         (:members 
+                            ( ("WC_LITERAL" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [706 717])
+                              ("WC_WHITESPACE" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [720 734])
+                              ("WC_FIELD" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [737 746])
+                              ("WC_OPTIONALGROUP" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [749 768]))                            
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [697 774])
+                    ("content" variable (:type ("" type
+                         (:members 
+                            ( ("token" variable
+                                 (:pointer 1
+                                  :type "char")
+                                  (reparse-symbol classsubparts) [907 919])
+                              ("syntax" variable
+                                 (:pointer 1
+                                  :type ("asn1p_wsyntx_s" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [922 952]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [897 964])
+                    ("next" variable (:type "int") (reparse-symbol classsubparts) [1005 1010]))                  
+                :type "struct")
+                nil [658 1034])
+            ("asn1p_wsyntx_t" type
+               (:typedef ("asn1p_wsyntx_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_wsyntx_s"
+                :type "typedef")
+                nil [1036 1133])
+            ("asn1p_wsyntx_s" type
+               (:members 
+                  ( ("chunks" variable (:type "int") (reparse-symbol classsubparts) [1107 1114]))                  
+                :type "struct")
+                nil [1036 1133])
+            ("asn1p_wsyntx_chunk_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1237 1242]))                  
+                :type ("asn1p_wsyntx_chunk_t" type (:type "class") nil nil))
+                nil [1192 1243])
+            ("asn1p_wsyntx_chunk_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_wsyntx_chunk_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1273 1296]))                  
+                :type "void")
+                nil [1244 1297])
+            ("asn1p_wsyntx_chunk_clone" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_wsyntx_chunk_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1345 1368]))                  
+                :type ("asn1p_wsyntx_chunk_t" type (:type "class") nil nil))
+                nil [1298 1369])
+            ("asn1p_wsyntx_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1404 1409]))                  
+                :type ("asn1p_wsyntx_t" type (:type "class") nil nil))
+                nil [1371 1410])
+            ("asn1p_wsyntx_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_wsyntx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1434 1451]))                  
+                :type "void")
+                nil [1411 1452])
+            ("asn1p_wsyntx_clone" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_wsyntx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1488 1505]))                  
+                :type ("asn1p_wsyntx_t" type (:type "class") nil nil))
+                nil [1453 1506])
+            ("asn1p_wsyntx_chunk_fromstring" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("token" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1668 1680])
+                    ("_copy" variable (:type "int") (reparse-symbol arg-sub-list) [1681 1691]))                  
+                :type ("asn1p_wsyntx_chunk_t" type (:type "class") nil nil))
+                nil [1616 1692])
+            ("asn1p_wsyntx_chunk_fromsyntax" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("syntax" variable
+                       (:pointer 1
+                        :type ("asn1p_wsyntx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1745 1768]))                  
+                :type ("asn1p_wsyntx_chunk_t" type (:type "class") nil nil))
+                nil [1693 1769]))          
+    :file "asn1p_class.h"
+    :pointmax 1805
+    :fsize 1804
+    :lastmodtime '(17637 8066)
+    :unmatched-syntax '((semantic-list 1077 . 1106) (symbol 1070 . 1077) (semantic-list 975 . 1004) (symbol 967 . 975))
+    :lexical-table 
+        '(("ASN1_PARSER_CLASS_H")
+          )
+
+    )
+   (semanticdb-table "asn1p_expr.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_EXPR_H" variable (:constant-flag t) nil [97 115])
+            ("asn1p_expr_meta_e" type
+               (:typedef ("asn1p_expr_meta" type (:type "enum") nil nil)
+                :superclasses "asn1p_expr_meta"
+                :type "typedef")
+                nil [160 527])
+            ("asn1p_expr_meta" type
+               (:members 
+                  ( ("AMT_INVALID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [192 204])
+                    ("AMT_TYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [206 215])
+                    ("AMT_TYPEREF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [242 254])
+                    ("AMT_VALUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [279 289])
+                    ("AMT_VALUESET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [317 330])
+                    ("AMT_OBJECT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [369 380])
+                    ("AMT_OBJECTCLASS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [412 428])
+                    ("AMT_OBJECTFIELD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [461 477])
+                    ("AMT_EXPR_META_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [489 508]))                  
+                :type "enum")
+                nil [160 527])
+            ("asn1p_expr_type_e" type
+               (:typedef ("asn1p_expr_type" type (:type "enum") nil nil)
+                :superclasses "asn1p_expr_type"
+                :type "typedef")
+                nil [567 3133])
+            ("asn1p_expr_type" type
+               (:members 
+                  ( ("A1TC_INVALID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [628 641])
+                    ("A1TC_REFERENCE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [663 678])
+                    ("A1TC_EXPORTVAR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [727 742])
+                    ("A1TC_UNIVERVAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [783 798])
+                    ("A1TC_BITVECTOR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [847 862])
+                    ("A1TC_OPAQUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [898 910])
+                    ("A1TC_EXTENSIBLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [954 970])
+                    ("A1TC_COMPONENTS_OF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1004 1023])
+                    ("A1TC_VALUESET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1052 1066])
+                    ("A1TC_CLASSDEF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1096 1110])
+                    ("A1TC_INSTANCE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1144 1158])
+                    ("A1TC_CLASSFIELD_TFS" variable
+                       (:constant-flag t
+                        :default-value (1314 1333)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1292 1333])
+                    ("A1TC_CLASSFIELD_FTVFS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1356 1378])
+                    ("A1TC_CLASSFIELD_VTVFS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1411 1433])
+                    ("A1TC_CLASSFIELD_FTVSFS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1469 1492])
+                    ("A1TC_CLASSFIELD_VTVSFS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1528 1551])
+                    ("A1TC_CLASSFIELD_OFS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1590 1610])
+                    ("A1TC_CLASSFIELD_OSFS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1635 1656])
+                    ("ASN_CONSTR_SEQUENCE" variable
+                       (:constant-flag t
+                        :default-value (1803 1818)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1781 1818])
+                    ("ASN_CONSTR_CHOICE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1836 1854])
+                    ("ASN_CONSTR_SET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1870 1885])
+                    ("ASN_CONSTR_SEQUENCE_OF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1899 1922])
+                    ("ASN_CONSTR_SET_OF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1943 1961])
+                    ("ASN_TYPE_ANY" variable
+                       (:constant-flag t
+                        :default-value (2077 2091)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2061 2091])
+                    ("ASN_BASIC_BOOLEAN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2117 2135])
+                    ("ASN_BASIC_NULL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2137 2152])
+                    ("ASN_BASIC_INTEGER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2154 2172])
+                    ("ASN_BASIC_REAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2174 2189])
+                    ("ASN_BASIC_ENUMERATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2191 2212])
+                    ("ASN_BASIC_BIT_STRING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2214 2235])
+                    ("ASN_BASIC_OCTET_STRING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2237 2260])
+                    ("ASN_BASIC_OBJECT_IDENTIFIER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2262 2290])
+                    ("ASN_BASIC_RELATIVE_OID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2292 2315])
+                    ("ASN_BASIC_EXTERNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2317 2336])
+                    ("ASN_BASIC_EMBEDDED_PDV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2338 2361])
+                    ("ASN_BASIC_CHARACTER_STRING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2363 2390])
+                    ("ASN_BASIC_UTCTime" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2392 2410])
+                    ("ASN_BASIC_GeneralizedTime" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2412 2438])
+                    ("ASN_STRING_IA5String" variable
+                       (:constant-flag t
+                        :default-value (2681 2699)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2658 2699])
+                    ("ASN_STRING_PrintableString" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2702 2729])
+                    ("ASN_STRING_VisibleString" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2731 2756])
+                    ("ASN_STRING_ISO646String" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2758 2782])
+                    ("ASN_STRING_NumericString" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2808 2833])
+                    ("ASN_STRING_UniversalString" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2835 2862])
+                    ("ASN_STRING_BMPString" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2864 2885])
+                    ("ASN_STRING_UTF8String" variable
+                       (:constant-flag t
+                        :default-value (2911 2930)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2887 2930])
+                    ("ASN_STRING_GeneralString" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2933 2958])
+                    ("ASN_STRING_GraphicString" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2960 2985])
+                    ("ASN_STRING_TeletexString" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2987 3012])
+                    ("ASN_STRING_T61String" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3014 3035])
+                    ("ASN_STRING_VideotexString" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3037 3063])
+                    ("ASN_STRING_ObjectDescriptor" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3065 3093])
+                    ("ASN_EXPR_TYPE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3095 3114]))                  
+                :type "enum")
+                nil [567 3133])
+            ("asn1p_expr_str.h" include nil nil [3135 3162])
+            ("asn1p_expr2uclass.h" include nil nil [3163 3193])
+            ("asn1p_module_s" type
+               (:prototype t
+                :type "struct")
+                nil [3195 3217])
+            ("asn1p_expr_t" type
+               (:typedef ("asn1p_expr_s" type (:type "struct") nil nil)
+                :superclasses "asn1p_expr_s"
+                :type "typedef")
+                nil [3284 6690])
+            ("asn1p_expr_s" type
+               (:members 
+                  ( ("Identifier" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3350 3367])
+                    ("meta_type" variable (:type ("asn1p_expr_meta_e" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3442 3470])
+                    ("expr_type" variable (:type ("asn1p_expr_type_e" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3514 3542])
+                    ("reference" variable
+                       (:pointer 1
+                        :type ("asn1p_ref_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3631 3654])
+                    ("constraints" variable
+                       (:pointer 1
+                        :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3696 3728])
+                    ("combined_constraints" variable
+                       (:pointer 1
+                        :type ("asn1p_constraint_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3851 3892])
+                    ("lhs_params" variable
+                       (:pointer 1
+                        :type ("asn1p_paramlist_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4029 4059])
+                    ("rhs_pspecs" variable
+                       (:pointer 1
+                        :type ("asn1p_expr_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4133 4165])
+                    ("specializations" variable (:type ("" type
+                         (:members 
+                            ( ("asn1p_pspec_s" type
+                                 (:members 
+                                    ( ("rhs_pspecs" variable
+                                         (:pointer 1
+                                          :type ("asn1p_expr_s" type
+                                               (:prototype t
+                                                :type "struct")
+                                                nil nil))
+                                          (reparse-symbol classsubparts) [4344 4376])
+                                      ("my_clone" variable
+                                         (:pointer 1
+                                          :type ("asn1p_expr_s" type
+                                               (:prototype t
+                                                :type "struct")
+                                                nil nil))
+                                          (reparse-symbol classsubparts) [4380 4410]))                                    
+                                  :type "struct")
+                                  (reparse-symbol classsubparts) [4318 4422])
+                              ("pspec" variable
+                                 (:pointer 1
+                                  :type ("asn1p_pspec_s" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [4318 4422])
+                              ("pspecs_count" variable (:type "int") (reparse-symbol classsubparts) [4425 4442]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4307 4494])
+                    ("spec_index" variable (:type "int") (reparse-symbol classsubparts) [4496 4511])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("asn1p_value_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4633 4654])
+                    ("with_syntax" variable
+                       (:pointer 1
+                        :type ("asn1p_wsyntx_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4694 4722])
+                    ("asn1p_ioc_matrix_s" type
+                       (:members 
+                          ( ("row" variable
+                               (:pointer 2
+                                :type ("asn1p_ioc_row_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4819 4841])
+                            ("rows" variable (:type "int") (reparse-symbol classsubparts) [4844 4853])
+                            ("max_identifier_length" variable (:type "int") (reparse-symbol classsubparts) [4856 4882]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [4789 4906])
+                    ("object_class_matrix" variable (:type ("asn1p_ioc_matrix_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4789 4906])
+                    ("asn1p_type_tag_s" type
+                       (:members 
+                          ( ("tag_class" variable (:type ("" type
+                                 (:members 
+                                    ( ("TC_NOCLASS" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [4967 4978])
+                                      ("TC_UNIVERSAL" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [4982 4995])
+                                      ("TC_APPLICATION" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [4999 5014])
+                                      ("TC_CONTEXT_SPECIFIC" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [5018 5038])
+                                      ("TC_PRIVATE" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [5042 5053]))                                    
+                                  :type "enum")
+                                  nil nil)) (reparse-symbol classsubparts) [4957 5068])
+                            ("tag_mode" variable (:type ("" type
+                                 (:members 
+                                    ( ("TM_DEFAULT" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [5081 5092])
+                                      ("TM_IMPLICIT" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [5096 5108])
+                                      ("TM_EXPLICIT" variable
+                                         (:constant-flag t
+                                          :type "int")
+                                          (reparse-symbol enumsubparts) [5112 5124]))                                    
+                                  :type "enum")
+                                  nil nil)) (reparse-symbol classsubparts) [5071 5138])
+                            ("tag_value" variable (:type ("asn1c_integer_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5141 5167]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [4929 5175])
+                    ("tag" variable (:type ("asn1p_type_tag_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4929 5175])
+                    ("asn1p_expr_marker_s" type
+                       (:members 
+                          ( ("asn1p_expr_marker_e" type
+                               (:members 
+                                  ( ("EM_NOMARK" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5240 5250])
+                                    ("EM_INDIRECT" variable
+                                       (:constant-flag t
+                                        :default-value (5269 5273)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5255 5273])
+                                    ("EM_OMITABLE" variable
+                                       (:constant-flag t
+                                        :default-value (5326 5330)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5312 5330])
+                                    ("EM_OPTIONAL" variable
+                                       (:constant-flag t
+                                        :default-value (5388 5392)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5374 5392])
+                                    ("EM_DEFAULT" variable
+                                       (:constant-flag t
+                                        :default-value (5439 5443)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5426 5443])
+                                    ("EM_UNRECURSE" variable
+                                       (:constant-flag t
+                                        :default-value (5490 5494)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5475 5494]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [5209 5534])
+                            ("flags" variable (:type ("asn1p_expr_marker_e" type
+                                 (:prototype t
+                                  :type "enum")
+                                  nil nil)) (reparse-symbol classsubparts) [5209 5534])
+                            ("default_value" variable
+                               (:pointer 1
+                                :type ("asn1p_value_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5537 5566]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [5178 5603])
+                    ("marker" variable (:type ("asn1p_expr_marker_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5178 5603])
+                    ("unique" variable (:type "int") (reparse-symbol classsubparts) [5605 5616])
+                    ("auto_tags_OK" variable (:type "int") (reparse-symbol classsubparts) [5700 5717])
+                    ("members" variable (:type "int") (reparse-symbol classsubparts) [5795 5803])
+                    ("next" variable (:type "int") (reparse-symbol classsubparts) [5878 5883])
+                    ("parent_expr" variable
+                       (:pointer 1
+                        :type ("asn1p_expr_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5886 5919])
+                    ("module" variable
+                       (:pointer 1
+                        :type ("asn1p_module_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5937 5967])
+                    ("_lineno" variable (:type "int") (reparse-symbol classsubparts) [6087 6099])
+                    ("_mark" variable (:type ("" type
+                         (:members 
+                            ( ("TM_NOMARK" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [6196 6206])
+                              ("TM_RECURSION" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [6209 6222])
+                              ("TM_BROKEN" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [6255 6265]))                            
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [6187 6310])
+                    ("_anonymous_type" variable (:type "int") (reparse-symbol classsubparts) [6358 6378])
+                    ("_type_unique_index" variable (:type "int") (reparse-symbol classsubparts) [6407 6430])
+                    ("_type_referenced" variable (:type "int") (reparse-symbol classsubparts) [6472 6493])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [6631 6642])
+                    ("data_free" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6644 6674]))                  
+                :type "struct")
+                nil [3284 6690])
+            ("asn1p_expr_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("_lineno" variable (:type "int") (reparse-symbol arg-sub-list) [6760 6772])
+                    ("" variable
+                       (:pointer 1
+                        :type ("asn1p_module_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6773 6797]))                  
+                :type ("asn1p_expr_t" type (:type "class") nil nil))
+                nil [6731 6798])
+            ("asn1p_expr_clone" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_expr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6830 6845])
+                    ("skip_extensions" variable (:type "int") (reparse-symbol arg-sub-list) [6846 6866]))                  
+                :type ("asn1p_expr_t" type (:type "class") nil nil))
+                nil [6799 6867])
+            ("asn1p_expr_clone_with_resolver" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("asn1p_expr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6913 6928])
+                    ("" variable
+                       (:pointer 1
+                        :type ("asn1p_expr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6930 6955])
+                    ("resolver_arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7004 7023]))                  
+                :type ("asn1p_expr_t" type (:type "class") nil nil))
+                nil [6868 7024])
+            ("asn1p_expr_add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("to" variable
+                       (:pointer 1
+                        :type ("asn1p_expr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7045 7062])
+                    ("what" variable
+                       (:pointer 1
+                        :type ("asn1p_expr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7063 7082]))                  
+                :type "void")
+                nil [7025 7083])
+            ("asn1p_expr_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("expr" variable
+                       (:pointer 1
+                        :type ("asn1p_expr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7105 7124]))                  
+                :type "void")
+                nil [7084 7125])
+            ("TAG2STRING_BUFFER_SIZE" variable (:constant-flag t) nil [7135 7157])
+            ("asn1p_tag2string" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("tag" variable
+                       (:pointer 1
+                        :type ("asn1p_type_tag_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7222 7251])
+                    ("opt_buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7252 7266]))                  
+                :type "char")
+                nil [7199 7267]))          
+    :file "asn1p_expr.h"
+    :pointmax 7301
+    :fsize 7300
+    :lastmodtime '(17676 46026)
+    :unmatched-syntax '((semantic-list 6955 . 7001) (semantic-list 6944 . 6955) (semantic-list 5856 . 5877) (symbol 5848 . 5856) (semantic-list 5773 . 5794) (symbol 5766 . 5773) (spp-macro-def 2599 . 2614) (spp-macro-def 2536 . 2555) (spp-macro-def 2480 . 2498) (spp-macro-def 2016 . 2030) (spp-macro-def 1729 . 1744) (spp-macro-def 1237 . 1256))
+    :lexical-table 
+        '(("ASN_STRING_MASK" . ((number "0x300" 2616 . 2621)))
+          ("ASN_BASIC_MASK" . ((number "0x40" 2032 . 2036)))
+          ("ASN_STRING_NKM_MASK" . ((number "0x200" 2556 . 2561)))
+          ("ASN1_PARSER_EXPR_H")
+          ("TAG2STRING_BUFFER_SIZE" . ((number "64" 7158 . 7160)))
+          ("ASN_STRING_KM_MASK" . ((number "0x100" 2499 . 2504)))
+          ("ASN_CLASSFIELD_MASK" . ((number "0x10" 1257 . 1261)))
+          ("ASN_CONSTR_MASK" . ((number "0x20" 1746 . 1750)))
+          )
+
+    )
+   (semanticdb-table "asn1p_expr_str.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_EXPR_STR_H" variable (:constant-flag t) nil [169 191])
+            ("asn1p_expr_type2str" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [256 1826])
+            ("ASN_EXPR_TYPE2STR" variable (:constant-flag t) nil [1917 1934]))          
+    :file "asn1p_expr_str.h"
+    :pointmax 2181
+    :fsize 2180
+    :lastmodtime '(17676 46050)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ASN1_PARSER_EXPR_STR_H")
+          ("ASN_EXPR_TYPE2STR" (spp-arg-list ("type") 1934 . 1940) . ((semantic-list "(							\\
+	(((ssize_t)(type)) < 0					\\
+	|| ((size_t)(type)) >= sizeof(asn1p_expr_type2str)	\\
+		/ sizeof(asn1p_expr_type2str[0]))		\\
+		? (char *)0					\\
+		: asn1p_expr_type2str[(int)(type)]		\\
+	)" 1948 . 2143)))
+          )
+
+    )
+   (semanticdb-table "asn1p_expr2uclass.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ASN1_PARSER_EXPR2UCLASS_H" variable (:constant-flag t) nil [43 68])
+            ("expr_type2uclass_value" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "int")
+                nil [133 1284])
+            ("expr_utag2type" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("asn1p_expr_type" type (:type "enum") nil nil))
+                nil [1286 2464])
+            ("ASN_UNIVERSAL_TAG2TYPE" variable (:constant-flag t) nil [2550 2572])
+            ("ASN_UNIVERSAL_TAG2STR" variable (:constant-flag t) nil [2776 2797]))          
+    :file "asn1p_expr2uclass.h"
+    :pointmax 2899
+    :fsize 2898
+    :lastmodtime '(16927 13357)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ASN_UNIVERSAL_TAG2STR" (spp-arg-list ("utag") 2797 . 2803) . ((symbol "ASN_EXPR_TYPE2STR" 2811 . 2828) (semantic-list "(ASN_UNIVERSAL_TAG2TYPE(utag))" 2828 . 2858)))
+          ("ASN1_PARSER_EXPR2UCLASS_H")
+          ("ASN_UNIVERSAL_TAG2TYPE" (spp-arg-list ("utag") 2572 . 2578) . ((semantic-list "(								\\
+	(((int)(utag)) < 0						\\
+	|| ((int)(utag)) >= (int)(sizeof(expr_utag2type)		\\
+		/ sizeof(expr_utag2type[0])))				\\
+		? 0							\\
+		: expr_utag2type[(int)(utag)]				\\
+	)" 2586 . 2767)))
+          )
+
+    )
+   )
+  :file "!Users!artemart!CODING!C!asn1c-0.9.21!libasn1parser!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

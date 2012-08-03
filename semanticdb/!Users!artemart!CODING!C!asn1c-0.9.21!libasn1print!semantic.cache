@@ -1,0 +1,80 @@
+;; Object libasn1print/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libasn1print/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CFLAGS" variable (:default-value ("@ADD_CFLAGS@")) nil [2 27])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/libasn1parser" "-I$(top_srcdir)/libasn1fix")) nil [27 108])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libasn1print.la")) nil [109 146])
+            ("libasn1print_la_LDFLAGS" variable (:default-value ("-all-static")) nil [147 185])
+            ("libasn1print_la_SOURCES" variable (:default-value ("asn1print.c" "asn1print.h")) nil [185 240]))          
+    :file "Makefile.am"
+    :pointmax 241
+    :fsize 240
+    :lastmodtime '(16674 57373)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "asn1print.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_ASN1PRINT_H_" variable (:constant-flag t) nil [31 44])
+            ("asn1print_flags" type
+               (:members 
+                  ( ("APF_NOFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [70 82])
+                    ("APF_NOINDENT" variable
+                       (:constant-flag t
+                        :default-value (100 104)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [84 104])
+                    ("APF_LINE_COMMENTS" variable
+                       (:constant-flag t
+                        :default-value (153 157)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [133 157])
+                    ("APF_PRINT_XML_DTD" variable
+                       (:constant-flag t
+                        :default-value (208 212)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [188 212])
+                    ("APF_PRINT_CONSTRAINTS" variable
+                       (:constant-flag t
+                        :default-value (262 266)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [238 266])
+                    ("APF_PRINT_CLASS_MATRIX" variable
+                       (:constant-flag t
+                        :default-value (320 324)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [295 324]))                  
+                :type "enum")
+                nil [46 352])
+            ("asn1print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("asn" variable
+                       (:pointer 1
+                        :type ("asn1p_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [430 443])
+                    ("flags" variable (:type ("asn1print_flags" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [444 471]))                  
+                :type "int")
+                nil [416 472]))          
+    :file "asn1print.h"
+    :pointmax 502
+    :fsize 501
+    :lastmodtime '(17433 14327)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_ASN1PRINT_H_")
+          )
+
+    )
+   )
+  :file "!Users!artemart!CODING!C!asn1c-0.9.21!libasn1print!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,24 @@
+;; Object lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lisp/"
+  :tables (list 
+   (semanticdb-table "org-version.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("org-release" function nil nil [84 255])
+            ("org-git-version" function nil nil [271 470])
+            ("org-odt-data-dir" variable
+               (:constant-flag t
+                :default-value "/usr/share/emacs/etc/org")
+                nil [486 572]))          
+    :file "org-version.el"
+    :pointmax 697
+    :fsize 696
+    :lastmodtime '(20481 41945)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!.emacs.d!el-get!org-mode!lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

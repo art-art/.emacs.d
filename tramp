@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*-
+;; -*- emacs-lisp -*- <12/07/21 13:33:39 /Users/artemart/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -16,4 +16,32 @@
   ("id" "/usr/bin/id")
   ("gid-integer" 0)
   ("uid-integer" 0)
-  ("readlink" nil)))
+  ("readlink" nil)
+  ("busybox" nil)
+  ("tmpdir" "/sudo:root@localhost:/tmp")
+  ("~root" "/var/root"))
+ (["ssh" "artart" "31.186.100.96" nil]
+  ("uname" "Linux 2.6.18-308.4.1.el5xen")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("~" "/home/artart")
+  ("file-exists" "test -e")
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t)
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 500)
+  ("trash" nil)
+  ("readlink" "\\readlink")
+  ("local-encoding" base64-encode-region)
+  ("local-decoding" base64-decode-region)
+  ("remote-encoding" "base64")
+  ("remote-decoding" "base64 -d -i")
+  ("inline-compress" "gzip")
+  ("inline-decompress" "gzip -d")))

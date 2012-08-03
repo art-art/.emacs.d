@@ -4,7 +4,6 @@
   (delete-other-windows)
   ;(sr-speedbar-open)
   (split-window-vertically)
-  (find-file "~/Dropbox/.org/work.org")
   (split-window-horizontally)
   (dired "~/")
   )
@@ -13,7 +12,6 @@
   "Make two windows"
   (interactive)
   (delete-other-windows)
-  (find-file "~/Dropbox/.org/work.org")
   (split-window-horizontally)
   (dired "~/")
   )

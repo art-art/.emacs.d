@@ -1,0 +1,21 @@
+;; Object standard-modules/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "standard-modules/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("smodsdir" variable (:default-value ("$(pkgdatadir)/standard-modules")) nil [2 44])
+            ("dist_smods_DATA" variable (:default-value ("$(srcdir)/*.asn1" "$(srcdir)/README")) nil [45 109])
+            ("uninstall-local" function nil nil [110 175]))          
+    :file "Makefile.am"
+    :pointmax 175
+    :fsize 174
+    :lastmodtime '(17420 6937)
+    :unmatched-syntax '((shell-command 143 . 174) (bol 142 . 142))
+    )
+   )
+  :file "!Users!artemart!CODING!C!asn1c-0.9.21!skeletons!standard-modules!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

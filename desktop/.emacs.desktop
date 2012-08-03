@@ -1,0 +1,51 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Jul  2 22:59:46 2012
+;; Desktop file format version 206
+;; Emacs version 24.1.50.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/CODING/haskell/graph.hs" "~/.emacs" "~/.emacs.d/rc/emacs-jabber.el" "~/.emacs.d/el-get/.loaddefs.el" "~/.emacs.d/el-get/.status.el" "~/.emacs.d/rc/emacs-cedet.el" "~/.emacs.d/rc/emacs-desktop.el" "~/.emacs.d/rc/emacs-flymake.el" "~/.emacs.d/rc/emacs-server.el" "~/.emacs.d/rc/emacs-autocomplete.el" "~/.emacs.d/rc/emacs-erc.el" "~/.emacs.d/el-get/fuzzy/fuzzy.el" "~/.emacs.d/el-get/fuzzy/README.md" "~/.emacs.d/_emacs_" "~/.emacs.d/.smex-items" "~/.emacs.d/custom.el" "~/CODING/Erlang/comrade/apps/comrade/src/db.erl" "~/CODING/Erlang/comrade/apps/comrade/src/handler_auth.erl" "~/Dropbox/Notes.rtf" "~/Dropbox/English.txt"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/artemart/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(auto-fill-mode paredit-mode elisp-slime-nav-mode eldoc-mode hi-lock-mode)
+  2114
+  '(879 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/Users/artemart/CODING/haskell/graph.hs"
+  "graph.hs"
+  'haskell-mode
+  nil
+  639
+  '(639 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "artemart"
+  'dired-mode
+  nil
+  731
+  '(nil nil)
+  t
+  '("/Users/artemart/")
+  nil)
+

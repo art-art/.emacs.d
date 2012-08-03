@@ -1,0 +1,372 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("check-syntax" function nil nil [2 46]))          
+    :file "Makefile"
+    :pointmax 46
+    :fsize 45
+    :lastmodtime '(20507 38403)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nbc_classifier.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("nbc_trained_samples.h" include nil nil [12 44])
+            ("nbc_classifier.h" include nil nil [45 72])
+            ("string.h" include (:system-flag t) nil [73 92])
+            ("stdlib.h" include (:system-flag t) nil [93 112])
+            ("split_sentence" function
+               (:arguments 
+                  ( ("sentence" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [159 180]))                  
+                :type "int")
+                nil [144 679])
+            ("classify" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("sentence" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [726 747])
+                    ("ht" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [748 765]))                  
+                :type ("nbc_classified" type (:type "class") nil nil))
+                nil [693 2250]))          
+    :file "nbc_classifier.c"
+    :pointmax 2254
+    :fsize 2253
+    :lastmodtime '(20483 5337)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nbc_classifier.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NBC_CLASSIFIER" variable (:constant-flag t) nil [32 46])
+            ("nbc_classified" type
+               (:typedef ("nbc_classified" type (:type "struct") nil nil)
+                :superclasses "nbc_classified"
+                :type "typedef")
+                nil [49 151])
+            ("nbc_classified" type
+               (:members 
+                  ( ("classes" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [82 98])
+                    ("most_likely_class" variable (:type ("nbc_kind_class" type (:type "class") nil nil)) (reparse-symbol classsubparts) [100 133]))                  
+                :type "struct")
+                nil [49 151])
+            ("classify" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("sentence" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [185 206])
+                    ("ht" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [207 224]))                  
+                :type ("nbc_classified" type (:type "class") nil nil))
+                nil [153 225]))          
+    :file "nbc_classifier.h"
+    :pointmax 255
+    :fsize 254
+    :lastmodtime '(20483 5285)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NBC_CLASSIFIER")
+          )
+
+    )
+   (semanticdb-table "nbc_trained_samples.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NBC_TRAINED_SAMPLES" variable (:constant-flag t) nil [37 56])
+            ("LOG" variable (:constant-flag t) nil [66 69])
+            ("nbc_kind_class" type
+               (:typedef ("nbc_kind_class" type (:type "enum") nil nil)
+                :superclasses "nbc_kind_class"
+                :type "typedef")
+                nil [143 223])
+            ("nbc_kind_class" type
+               (:members 
+                  ( ("NBC_CLASS1" variable
+                       (:constant-flag t
+                        :default-value (187 188)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [174 188])
+                    ("NBC_CLASS2" variable
+                       (:constant-flag t
+                        :default-value (204 205)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [191 205]))                  
+                :type "enum")
+                nil [143 223])
+            ("" type
+               (:members 
+                  ( ("COUNT_SAMPLES" variable
+                       (:constant-flag t
+                        :default-value (249 253)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [233 253])
+                    ("COUNT_CLASSES" variable
+                       (:constant-flag t
+                        :default-value (279 280)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [263 280])
+                    ("WORD_LENGTH" variable
+                       (:constant-flag t
+                        :default-value (297 299)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [283 299])
+                    ("LAPLACE_SMOOTHING" variable
+                       (:constant-flag t
+                        :default-value (322 323)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [302 323]))                  
+                :type "enum")
+                nil [225 326])
+            ("nbc_class" type
+               (:typedef ("nbc_class" type (:type "struct") nil nil)
+                :superclasses "nbc_class"
+                :type "typedef")
+                nil [360 442])
+            ("nbc_class" type
+               (:members 
+                  ( ("kind_class" variable (:type ("nbc_kind_class" type (:type "class") nil nil)) (reparse-symbol classsubparts) [388 414])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [416 429]))                  
+                :type "struct")
+                nil [360 442])
+            ("nbc_sample" type
+               (:typedef ("nbc_sample" type (:type "struct") nil nil)
+                :superclasses "nbc_sample"
+                :type "typedef")
+                nil [444 525])
+            ("nbc_sample" type
+               (:members 
+                  ( ("inhering_classes" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [473 498])
+                    ("word" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [500 511]))                  
+                :type "struct")
+                nil [444 525])
+            ("nbc_ht" type
+               (:typedef ("nbc_ht" type (:type "struct") nil nil)
+                :superclasses "nbc_ht"
+                :type "typedef")
+                nil [571 668])
+            ("nbc_ht" type
+               (:members 
+                  ( ("samples" variable
+                       (:pointer 2
+                        :type ("nbc_sample" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [596 617])
+                    ("classes" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [619 635])
+                    ("count_samples" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [637 658]))                  
+                :type "struct")
+                nil [571 668])
+            ("nbc_get_sample" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [722 738])
+                    ("ht" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [739 756]))                  
+                :type ("nbc_sample" type (:type "class") nil nil))
+                nil [689 757])
+            ("nbc_get_class_count" function
+               (:prototype-flag t
+                :constant-flag t
+                :arguments 
+                  ( ("kind_class" variable (:type ("nbc_kind_class" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [791 817])
+                    ("ht" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [818 835]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [758 836])
+            ("nbc_put_sample" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("word" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [857 874])
+                    ("kind_class" variable (:type ("nbc_kind_class" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [896 922])
+                    ("ht" variable
+                       (:pointer 1
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [943 954]))                  
+                :type "void")
+                nil [837 955])
+            ("nbc_new_ht" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("nbc_ht" type (:type "class") nil nil))
+                nil [957 978])
+            ("nbc_delete_ht" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ht" variable
+                       (:pointer 1
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [998 1009]))                  
+                :type "void")
+                nil [979 1010]))          
+    :file "nbc_trained_samples.h"
+    :pointmax 1045
+    :fsize 1044
+    :lastmodtime '(20483 4288)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LOG" (spp-arg-list ("msg") 69 . 74) . ((symbol "printf" 79 . 85) (semantic-list "(\"(File:%s; Line:%d) __ %s \\n\", __FILE__, __LINE__, msg)" 85 . 141)))
+          ("NBC_TRAINED_SAMPLES")
+          )
+
+    )
+   (semanticdb-table "nbc_trained_samples.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("string.h" include (:system-flag t) nil [14 33])
+            ("stdlib.h" include (:system-flag t) nil [34 53])
+            ("nbc_trained_samples.h" include nil nil [54 86])
+            ("h1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("chars" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [105 123])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [124 130]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [88 208])
+            ("h2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("chars" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [227 245])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [246 252]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [210 342])
+            ("hash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [363 379])
+                    ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [380 389]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [344 722])
+            ("nbc_new_ht" function
+               (:pointer 1
+                :type ("nbc_ht" type (:type "class") nil nil))
+                nil [724 1382])
+            ("nbc_delete_ht" function
+               (:arguments 
+                  ( ("ht" variable
+                       (:pointer 1
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1404 1415]))                  
+                :type "void")
+                nil [1384 1653])
+            ("nbc_get_sample" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1689 1705])
+                    ("ht" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1713 1730]))                  
+                :type ("nbc_sample" type (:type "class") nil nil))
+                nil [1655 1955])
+            ("nbc_get_class_count" function
+               (:constant-flag t
+                :arguments 
+                  ( ("kind_class" variable (:type ("nbc_kind_class" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1990 2016])
+                    ("ht" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2017 2034]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1957 2146])
+            ("nbc_put_sample" function
+               (:arguments 
+                  ( ("word" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2169 2186])
+                    ("kind_class" variable (:type ("nbc_kind_class" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2203 2229])
+                    ("ht" variable
+                       (:pointer 1
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2246 2257]))                  
+                :type "void")
+                nil [2148 3151]))          
+    :file "nbc_trained_samples.c"
+    :pointmax 3154
+    :fsize 3153
+    :lastmodtime '(20483 4903)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_nbc.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "test_nbc.c"
+    :pointmax 55
+    :fsize 54
+    :lastmodtime '(20482 52150)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!CODING!C!nbc!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

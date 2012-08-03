@@ -1,0 +1,22 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/skeletons")) nil [1 41])
+            ("check_PROGRAMS" variable (:default-value ("check-ber_tlv_tag")) nil [42 257])
+            ("LDADD" variable (:default-value ("-lm")) nil [258 270])
+            ("TESTS" variable (:default-value ("$(check_PROGRAMS)")) nil [271 297]))          
+    :file "Makefile.am"
+    :pointmax 297
+    :fsize 296
+    :lastmodtime '(17288 17946)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!CODING!C!asn1c-0.9.21!skeletons!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

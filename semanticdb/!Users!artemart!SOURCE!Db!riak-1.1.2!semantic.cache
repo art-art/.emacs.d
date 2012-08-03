@@ -1,0 +1,25 @@
+;; Object riak-1.1.2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "riak-1.1.2/"
+  :tables (list 
+   (semanticdb-table "orgbatch.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("let" code nil nil [22 252])
+            ("let" code nil nil [361 582])
+            ("org-install" include nil nil [583 605])
+            ("add-to-list" code nil nil [606 662])
+            ("setq" code nil nil [708 750])
+            ("riak-export-doc-file" function (:arguments ("filename" "format")) nil [785 1078])
+            ("riak-export-doc-dir" function (:arguments ("directory" "format")) nil [1080 1254]))          
+    :file "orgbatch.el"
+    :pointmax 1255
+    :fsize 1254
+    :lastmodtime '(20365 24069)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!SOURCE!Db!riak-1.1.2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

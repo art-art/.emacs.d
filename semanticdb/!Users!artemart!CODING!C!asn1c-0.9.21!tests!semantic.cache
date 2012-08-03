@@ -1,0 +1,19 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("*.asn1*")) nil [2 23]))          
+    :file "Makefile.am"
+    :pointmax 23
+    :fsize 22
+    :lastmodtime '(16574 40264)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!CODING!C!asn1c-0.9.21!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

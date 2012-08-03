@@ -1,0 +1,18 @@
+;; Object build/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "build/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags nil
+    :file "Makefile"
+    :pointmax 6008
+    :fsize 6007
+    :lastmodtime '(20482 37810)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!CODING!C!cmake!build!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

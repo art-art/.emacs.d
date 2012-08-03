@@ -1,0 +1,18 @@
+;; Object nbc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nbc/"
+  :tables (list 
+     (semanticdb-table "test_nbc.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "test_nbc.c"
+    :pointmax 14
+    :fsize 13
+    :lastmodtime '(20477 47643)
+    :unmatched-syntax '((string 10 . 12) (symbol 2 . 9) (punctuation 1 . 2))
+    )
+   )
+  :file "!Users!artemart!CODING!C!nbc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

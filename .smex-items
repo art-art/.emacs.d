@@ -1,0 +1,72 @@
+
+;; ----- smex-history -----
+(
+ replace-string
+ eshell
+ customize-themes
+ gdb
+ grep-find
+ blink-cursor-mode
+ auto-complete-mode
+)
+
+;; ----- smex-data -----
+(
+ (make-windows-2 . 151)
+ (package-list-packages . 49)
+ (customize-themes . 28)
+ (grep-find . 87)
+ (eshell . 271)
+ (find-file . 4)
+ (eshell-command . 2)
+ (dired . 1)
+ (customize-group . 5)
+ (tuareg-mode . 1)
+ (tuareg-help . 1)
+ (tuareg-about . 1)
+ (tuareg-run-ocaml . 1)
+ (customize-mode . 2)
+ (distel-bind-keys . 3)
+ (toggle-diredp-find-file-reuse-dir . 1)
+ (replace-string . 48)
+ (custom-theme-visit-theme . 2)
+ (customize-face . 3)
+ (org-mode . 1)
+ (will-be-social . 8)
+ (sgml-slash-matching . 1)
+ (haskell-mode . 3)
+ (paredit-mode . 9)
+ (version . 1)
+ (read-color . 1)
+ (list-colors-display . 2)
+ (menu-bar-showhide-tool-bar-menu-customize-enable-left . 2)
+ (highlight-80+-mode . 2)
+ (haskell-indentation-test-indentations . 1)
+ (el-get-install . 5)
+ (el-get-package-menu-revert . 1)
+ (el-get-init . 2)
+ (el-get-update-all . 2)
+ (el-get-reload . 2)
+ (haskell-cabal-mode . 1)
+ (el-get-self-checksum . 1)
+ (make-face . 1)
+ (customize-create-theme . 1)
+ (blink-cursor-mode . 12)
+ (magit-status . 1)
+ (server-start . 1)
+ (semantic-symref . 1)
+ (senator-fold-tag . 2)
+ (gdb . 15)
+ (erc . 2)
+ (cmake-mode . 7)
+ (jabber-info . 1)
+ (jabber-connect . 6)
+ (auto-complete . 4)
+ (auto-complete-mode . 10)
+ (global-auto-complete-mode . 1)
+ (autoarg-mode . 4)
+ (tramp-bug . 1)
+ (tramp-version . 1)
+ (compile . 1)
+ (yas/new-snippet . 1)
+)

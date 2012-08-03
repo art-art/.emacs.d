@@ -1,0 +1,211 @@
+;; Object w01-cpp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "w01-cpp/"
+  :tables (list 
+   (semanticdb-table "pointers.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstdio" include (:system-flag t) nil [1 18])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [20 40])
+            ("swap_broken" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [59 65])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [66 72]))                  
+                :type "void")
+                nil [42 217])
+            ("swap_ptr" function
+               (:arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [233 240])
+                    ("z" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [241 248]))                  
+                :type "void")
+                nil [219 467])
+            ("swap_ref" function
+               (:arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [483 490])
+                    ("y" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [491 498]))                  
+                :type "void")
+                nil [469 880])
+            ("main" function (:type "int") nil [882 2473]))          
+    :file "pointers.cpp"
+    :pointmax 2474
+    :fsize 2473
+    :lastmodtime '(18813 52233)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "drawable.h"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "drawable.h"
+    :pointmax 1280
+    :fsize 1279
+    :lastmodtime '(18813 52432)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_geometry.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GL/gl.h" include (:system-flag t) nil [1 19])
+            ("GL/glu.h" include (:system-flag t) nil [20 39])
+            ("GL/glut.h" include (:system-flag t) nil [40 60])
+            ("cstdlib" include (:system-flag t) nil [61 79])
+            ("vector" include (:system-flag t) nil [95 112])
+            ("geometry.h" include nil nil [113 134])
+            ("drawable.h" include nil nil [135 156])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [159 179])
+            ("myPoints" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("GfxPoint" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [181 207])
+            ("l1" variable
+               (:pointer 1
+                :type ("Drawable" type (:type "class") nil nil))
+                nil [239 300])
+            ("display" function (:type "void") nil [302 570])
+            ("init" function (:type "void") nil [572 832])
+            ("keyboard" function
+               (:arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [848 866])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [867 873])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [874 880]))                  
+                :type "void")
+                nil [834 964])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [975 984])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [985 997]))                  
+                :type "int")
+                nil [966 1263]))          
+    :file "test_geometry.cpp"
+    :pointmax 1266
+    :fsize 1265
+    :lastmodtime '(18813 52427)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "geometry.h"
+    :file "geometry.h"
+    :fsize 652
+    :lastmodtime '(18813 52427)
+    )
+   (semanticdb-table "oglfirst.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GL/gl.h" include (:system-flag t) nil [1 19])
+            ("GL/glu.h" include (:system-flag t) nil [20 39])
+            ("GL/glut.h" include (:system-flag t) nil [40 60])
+            ("cstdlib" include (:system-flag t) nil [61 79])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [96 116])
+            ("display" function (:type "void") nil [118 314])
+            ("init" function (:type "void") nil [316 386])
+            ("keyboard" function
+               (:arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [402 420])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [421 427])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [428 434]))                  
+                :type "void")
+                nil [388 518])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [529 538])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [539 551]))                  
+                :type "int")
+                nil [520 817]))          
+    :file "oglfirst.cpp"
+    :pointmax 820
+    :fsize 819
+    :lastmodtime '(18813 52233)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "geometry.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("geometry.h" include nil nil [1 22])
+            ("GfxPoint" function
+               (:constructor-flag t
+                :parent "GfxPoint"
+                :arguments 
+                  ( ("xx" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [156 167])
+                    ("yy" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [168 179])
+                    ("zz" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [180 191]))                  
+                :type ("GfxPoint" type (:type "class") nil nil))
+                nil [136 214])
+            ("GfxPoint" function
+               (:constructor-flag t
+                :parent "GfxPoint"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GfxPoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [274 296]))                  
+                :type ("GfxPoint" type (:type "class") nil nil))
+                nil [255 336])
+            ("==" function
+               (:operator-flag t
+                :parent "GfxPoint"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("GfxPoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [364 386]))                  
+                :type "bool")
+                nil [338 455]))          
+    :file "geometry.cpp"
+    :pointmax 458
+    :fsize 457
+    :lastmodtime '(18813 52427)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cdemo.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [18 36])
+            ("math.h" include (:system-flag t) nil [37 54])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [65 74])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75 87]))                  
+                :type "int")
+                nil [56 229]))          
+    :file "cdemo.c"
+    :pointmax 230
+    :fsize 229
+    :lastmodtime '(18813 52233)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!CODING!C!cmake!w01-cpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

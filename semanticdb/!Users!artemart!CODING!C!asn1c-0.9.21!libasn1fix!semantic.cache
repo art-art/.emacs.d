@@ -1,0 +1,280 @@
+;; Object libasn1fix/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libasn1fix/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CFLAGS" variable (:default-value ("@ADD_CFLAGS@")) nil [2 27])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/libasn1parser")) nil [27 77])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libasn1fix.la")) nil [78 113])
+            ("libasn1fix_la_LDFLAGS" variable (:default-value ("-all-static")) nil [114 150])
+            ("libasn1fix_la_SOURCES" variable (:default-value ("asn1fix.c" "asn1fix.h" "asn1fix_internal.h" "asn1fix_misc.c" "asn1fix_misc.h" "asn1fix_value.c" "asn1fix_value.h" "asn1fix_compat.c" "asn1fix_compat.h" "asn1fix_constr.c" "asn1fix_constr.h" "asn1fix_cstring.c" "asn1fix_cstring.h" "asn1fix_retrieve.c" "asn1fix_retrieve.h" "asn1fix_bitstring.c" "asn1fix_bitstring.h" "asn1fix_constraint.c" "asn1fix_constraint.h" "asn1fix_integer.c" "asn1fix_integer.h" "asn1fix_crange.c" "asn1fix_crange.h" "asn1fix_dereft.c" "asn1fix_dereft.h" "asn1fix_derefv.c" "asn1fix_derefv.h" "asn1fix_export.c" "asn1fix_export.h" "asn1fix_param.c" "asn1fix_param.h" "asn1fix_class.c" "asn1fix_class.h" "asn1fix_tags.c" "asn1fix_tags.h" "asn1fix_enum.c" "asn1fix_enum.h" "asn1fix_cws.c" "asn1fix_cws.h" "asn1fix_constraint_compat.c")) nil [150 948])
+            ("check_PROGRAMS" variable (:default-value ("check_fixer")) nil [949 978])
+            ("check_fixer_LDADD" variable (:default-value ("$(noinst_LTLIBRARIES)" "$(top_builddir)/libasn1parser/libasn1parser.la")) nil [979 1072])
+            ("check_fixer_DEPENDENCIES" variable (:default-value ("$(check_fixer_LDADD)")) nil [1072 1120])
+            ("TESTS_ENVIRONMENT" variable (:default-value ("./check_fixer")) nil [1121 1154])
+            ("TESTS" variable (:default-value ("${top_srcdir}/tests/*.asn1")) nil [1154 1189]))          
+    :file "Makefile.am"
+    :pointmax 1258
+    :fsize 1257
+    :lastmodtime '(17430 59025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "asn1fix_class.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "asn1fix_class.c"
+    :pointmax 2265
+    :fsize 2264
+    :lastmodtime '(17676 46475)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "asn1fix.h"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "asn1fix.h"
+    :pointmax 893
+    :fsize 892
+    :lastmodtime '(16677 64484)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "asn1fix.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("asn1fix_internal.h" include nil nil [1 30])
+            ("asn1fix.h" include nil nil [31 51])
+            ("_default_error_logger" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("_severity" variable (:type "int") (reparse-symbol arg-sub-list) [120 134])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [135 151])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [152 156]))                  
+                :type "void")
+                nil [86 157])
+            ("asn1f_fix_module__phase_1" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [232 243]))                  
+                :type "int")
+                nil [195 244])
+            ("asn1f_fix_module__phase_2" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [282 293]))                  
+                :type "int")
+                nil [245 294])
+            ("asn1f_fix_simple" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [323 334]))                  
+                :type "int")
+                nil [295 335])
+            ("asn1f_fix_constructed" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [398 409]))                  
+                :type "int")
+                nil [365 410])
+            ("asn1f_resolve_constraints" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [478 489]))                  
+                :type "int")
+                nil [441 490])
+            ("asn1f_check_constraints" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [556 567]))                  
+                :type "int")
+                nil [521 568])
+            ("asn1f_check_duplicate" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [632 643]))                  
+                :type "int")
+                nil [599 644])
+            ("asn1f_apply_unique_index" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [681 692]))                  
+                :type "int")
+                nil [645 693])
+            ("phase_1_1" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [715 726])
+                    ("prm2" variable (:type "int") (reparse-symbol arg-sub-list) [727 736]))                  
+                :type "int")
+                nil [694 737])
+            ("a1f_replace_me_with_proper_interface_arg" variable (:type ("arg_t" type (:type "class") nil nil)) nil [739 786])
+            ("asn1f_process" function
+               (:arguments 
+                  ( ("asn" variable
+                       (:pointer 1
+                        :type ("asn1p_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [877 890])
+                    ("flags" variable (:type ("asn1f_flags" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [891 914])
+                    ("error_logger" variable (:type ("error_logger_f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [917 945]))                  
+                :type "int")
+                nil [859 2499])
+            ("asn1f_fix_module__phase_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2588 2599]))                  
+                :type "int")
+                nil [2551 5542])
+            ("asn1f_fix_module__phase_2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5581 5592]))                  
+                :type "int")
+                nil [5544 6196])
+            ("phase_1_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6219 6230])
+                    ("prm2" variable (:type "int") (reparse-symbol arg-sub-list) [6231 6240]))                  
+                :type "int")
+                nil [6198 7969])
+            ("asn1f_fix_simple" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7999 8010]))                  
+                :type "int")
+                nil [7971 8167])
+            ("asn1f_fix_constructed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8202 8213]))                  
+                :type "int")
+                nil [8169 8763])
+            ("asn1f_resolve_constraints" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8802 8813]))                  
+                :type "int")
+                nil [8765 9183])
+            ("asn1f_check_constraints" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9220 9231]))                  
+                :type "int")
+                nil [9185 10212])
+            ("asn1f_check_duplicate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10247 10258]))                  
+                :type "int")
+                nil [10214 11734])
+            ("asn1f_apply_unique_index" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("arg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11772 11783]))                  
+                :type "int")
+                nil [11736 11917])
+            ("_default_error_logger" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("_severity" variable (:type "int") (reparse-symbol arg-sub-list) [11990 12004])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12005 12021])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [12022 12026]))                  
+                :type "void")
+                nil [11956 12303]))          
+    :file "asn1fix.c"
+    :pointmax 12304
+    :fsize 12303
+    :lastmodtime '(17650 22447)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "asn1fix_internal.h"
+    :file "asn1fix_internal.h"
+    :fsize 3633
+    :lastmodtime '(17439 30133)
+    )
+   (semanticdb-table "asn1fix_compat.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "asn1fix_compat.c"
+    :pointmax 3567
+    :fsize 3566
+    :lastmodtime '(16957 22891)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!CODING!C!asn1c-0.9.21!libasn1fix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

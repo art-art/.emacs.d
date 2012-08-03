@@ -1,0 +1,29 @@
+;; Object exmpp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "exmpp/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("ACLOCAL_FLAGS" variable (:default-value ("-I" "m4")) nil [1 23])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [23 47])
+            ("SUBDIRS" variable (:default-value ("examples")) nil [96 116])
+            ("SUBDIRS" variable (:default-value ("ebin")) nil [123 139])
+            ("SUBDIRS" variable (:default-value ("doc")) nil [164 179])
+            ("SUBDIRS" variable (:default-value ("testsuite")) nil [206 227])
+            ("EXTRA_DIST" variable nil nil [234 247])
+            ("distdir" variable (:default-value ("$(PACKAGE)-$(VERSION)")) nil [247 279])
+            ("check-junit" function (:arguments ("all")) nil [300 371])
+            ("check-junit" function nil nil [376 389])
+            ("updateknown" function nil nil [396 459]))          
+    :file "Makefile.am"
+    :pointmax 492
+    :fsize 491
+    :lastmodtime '(20473 35881)
+    :unmatched-syntax '((symbol 480 . 491) (symbol 468 . 479) (punctuation 466 . 467) (symbol 460 . 466) (bol 460 . 460) (symbol 72 . 75) (INCLUDE 64 . 71) (symbol 58 . 63) (punctuation 56 . 57) (symbol 48 . 55) (bol 48 . 48))
+    )
+   )
+  :file "!Users!artemart!CODING!Erlang!comrade!deps!exmpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

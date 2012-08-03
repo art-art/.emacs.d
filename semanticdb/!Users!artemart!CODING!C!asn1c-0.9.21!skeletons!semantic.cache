@@ -1,0 +1,21 @@
+;; Object skeletons/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "skeletons/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("standard-modules" "tests")) nil [2 35])
+            ("dist_pkgdata_DATA" variable (:default-value ("$(srcdir)/*.[ch]" "$(srcdir)/file-dependencies")) nil [36 113])
+            ("uninstall-local" function nil nil [114 181]))          
+    :file "Makefile.am"
+    :pointmax 181
+    :fsize 180
+    :lastmodtime '(17420 6937)
+    :unmatched-syntax '((shell-command 147 . 180) (bol 146 . 146))
+    )
+   )
+  :file "!Users!artemart!CODING!C!asn1c-0.9.21!skeletons!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

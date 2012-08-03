@@ -1,0 +1,112 @@
+;; Object naive_bayes_classifier/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "naive_bayes_classifier/"
+  :tables (list 
+   (semanticdb-table "nbc_trained_samples.h"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "nbc_trained_samples.h"
+    :pointmax 1284
+    :fsize 1283
+    :lastmodtime '(20473 58503)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nbc_classifier.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("nbc_classifier.h" include nil nil [12 39])
+            ("split_sentence" function
+               (:arguments 
+                  ( ("sentence" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86 107]))                  
+                :type "int")
+                nil [71 595])
+            ("classify" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("sentence" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [642 663])
+                    ("ht" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nbc_ht" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [664 681]))                  
+                :type ("nbc_classified" type (:type "class") nil nil))
+                nil [609 2170]))          
+    :file "nbc_classifier.c"
+    :pointmax 2174
+    :fsize 2173
+    :lastmodtime '(20473 14614)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nbc_trained_samples.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "nbc_trained_samples.c"
+    :pointmax 2624
+    :fsize 2623
+    :lastmodtime '(20473 59882)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nbc_classifier.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NBC_CLASSIFIER" variable (:constant-flag t) nil [32 46])
+            ("nbc_trained_samples.h" include nil nil [48 80])
+            ("nbc_classified" type
+               (:typedef ("nbc_classified" type (:type "struct") nil nil)
+                :superclasses "nbc_classified"
+                :type "typedef")
+                nil [82 198])
+            ("nbc_classified" type
+               (:members 
+                  ( ("classes" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [115 145])
+                    ("most_likely_class" variable (:type ("nbc_kind_class" type (:type "class") nil nil)) (reparse-symbol classsubparts) [147 180]))                  
+                :type "struct")
+                nil [82 198])
+            ("classify" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("sentence" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [232 253]))                  
+                :type ("nbc_classified" type (:type "class") nil nil))
+                nil [200 254]))          
+    :file "nbc_classifier.h"
+    :pointmax 284
+    :fsize 283
+    :lastmodtime '(20473 14437)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NBC_CLASSIFIER")
+          )
+
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags nil
+    :file "Makefile"
+    :pointmax 46
+    :fsize 44
+    :lastmodtime '(20472 26855)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!CODING!C!naive_bayes_classifier!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

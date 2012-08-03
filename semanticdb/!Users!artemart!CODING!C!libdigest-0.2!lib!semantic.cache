@@ -1,0 +1,96 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "digest.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DIGEST_H" variable (:constant-flag t) nil [240 248])
+            ("compute_digest" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("user_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [469 487])
+                    ("realm_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [488 507])
+                    ("password_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [508 530]))                  
+                :type "char")
+                nil [448 531]))          
+    :file "digest.h"
+    :pointmax 540
+    :fsize 539
+    :lastmodtime '(20482 62577)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DIGEST_H")
+          )
+
+    )
+   (semanticdb-table "digest.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("digest.h" include nil nil [1004 1023])
+            ("string.h" include (:system-flag t) nil [1025 1044])
+            ("stdio.h" include (:system-flag t) nil [1045 1063])
+            ("apr_md5.h" include (:system-flag t) nil [1065 1085])
+            ("LF" variable (:constant-flag t) nil [1196 1198])
+            ("CR" variable (:constant-flag t) nil [1210 1212])
+            ("MAX_STRING_LEN" variable (:constant-flag t) nil [1257 1271])
+            ("cntxt" variable
+               (:pointer 1
+                :type ("apr_pool_t" type (:type "class") nil nil))
+                nil [1277 1295])
+            ("terminate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1373 1378]))                  
+                :type "void")
+                nil [1351 1444])
+            ("compute_digest" function
+               (:pointer 1
+                :arguments 
+                  ( ("user_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1468 1486])
+                    ("realm_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1487 1506])
+                    ("password_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1507 1529]))                  
+                :type "char")
+                nil [1446 2764]))          
+    :file "digest.c"
+    :pointmax 2765
+    :fsize 2764
+    :lastmodtime '(20482 62577)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CR" . ((number "13" 1213 . 1215)))
+          ("LF" . ((number "10" 1199 . 1201)))
+          ("MAX_STRING_LEN" . ((number "256" 1272 . 1275)))
+          )
+
+    )
+   )
+  :file "!Users!artemart!CODING!C!libdigest-0.2!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

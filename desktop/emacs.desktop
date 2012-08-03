@@ -2,259 +2,50 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Thu Mar 29 21:05:19 2012
+;; Created Fri Aug  3 19:02:42 2012
 ;; Desktop file format version 206
-;; Emacs version 23.4.1
+;; Emacs version 24.1.50.1
 
 ;; Global section:
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '("Dro" "init" "Session" "get_session" "web" "init" "expire_time" "function" "cancell" "or" "event" "prevpos" "ej"))
+(setq search-ring '("(void" "SI" "	" "SIG" "printf" "key" "si" "folding" "fo" "example" "org" "source" "code" "f" "flock_t" "skeletons_dir"))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs" "~/.emacs.d/configs/init-common.el" "~/.emacs.d/configs/hl-line+.el" "~/.emacs.d/configs/" "~/JOB/sgm/" "~/Dropbox/.org/letters.org" "~/.emacs.d/configs/init-color-theme.el" "~/.emacs.d/configs/" "~/CODING/iOS/BookEj/" "~/.emacs.d/configs/init-windows.el" "~/Dropbox/" "~/.emacs.d/.gitignore" "~/.emacs.d" "~/CODING/Erlang/erlangine/src" "~/JOB/sgm/" "~/JOB/sgm/resource/desc.objs/items.json" "~/JOB/sgm/resource/desc.objs/quests.json" "~/JOB/sgm/" "~/JOB/sgm/resource/desc.objs/" "~/JOB/sgm/resource/desc.objs" "~/.emacs.d/configs/init-windows.el" "~/CODING/iOS/" "~/.emacs.d/configs/dired+.el" "~/.emacs.d/configs/" "~/CODING/iOS/" "~/CODING/iOS/BookEj/" "~/.emacs.d/configs/" "~/.emacs.d/desktop/"))
+(setq file-name-history '("/Users/artemart/CODING/C/easydb/main.c" "/Users/artemart/CODING/C/easydb/Makefile" "/Users/artemart/CODING/C/nbc/src/Makefile" "/Users/artemart/CODING/C/easydb/CMakeLists.txt" "/Users/artemart/CODING/C/easydb/pconfig.c" "/Users/artemart/CODING/C/easydb/test.config" "/Users/artemart/CODING/C/easydb/test.congif" "~/.emacs.d/desktop/" "/Users/artemart/Dropbox/.org/task.org" "/Users/artemart/CODING/C/easydb/test.probe" "/Users/artemart/CODING/C/easydb/CMakeLists.txt" "/Users/artemart/CODING/C/nbc/src/Makefile" "~/CODING/C/" "~/.emacs.d/custom.el" "~/.emacs" "~/.emacs.d/rc/emacs-gdb.el" "~/CODING/Erlang/erlangine/src/authdb.erl" "~/CODING/Erlang/erlangine/src/enge2_sup.erl" "~/CODING/Erlang/erlangine/src/enge2.erl" "~/CODING/C/easydb/main.c" "~/CODING/C/easydb/easy.c" "~/CODING/C/easydb/test.probe" "~/CODING/C/easydb/test.c" "~/CODING/C/easydb/Makefile" "~/CODING/C/nbc/src/Makefile" "~/CODING/C/easydb/main" "~/CODING/C/libdigest-0.2/lib/CMakeLists.txt" "~/.emacs.d/rc/emacs-autocomplete.el" "~/CODING/Erlang/comrade/apps/comrade/src/db.erl" "~/.emacs.d/el-get/yasnippet/snippets/objc-mode/prop"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/Users/artemart/.emacs"
-  ".emacs"
-  'emacs-lisp-mode
-  '(linum-mode)
-  838
-  '(838 nil)
   nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/.emacs.d/configs/init-common.el"
-  "init-common.el"
-  'emacs-lisp-mode
-  '(linum-mode)
-  844
-  '(730 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/.emacs.d/configs/hl-line+.el"
-  "hl-line+.el"
-  'emacs-lisp-mode
-  '(linum-mode)
-  1841
-  '(1 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix)))
-
-(desktop-create-buffer 206
-  nil
-  "configs"
+  "easydb"
   'dired-mode
-  '(linum-mode)
-  865
+  '(linum-mode yas/minor-mode ede-dired-minor-mode)
+  767
   '(nil nil)
   t
-  '("/Users/artemart/.emacs.d/configs/")
+  '("/Users/artemart/CODING/C/easydb/")
   nil)
 
 (desktop-create-buffer 206
-  "/Users/artemart/JOB/sgm/src/contr_arena.erl"
-  "contr_arena.erl"
-  'erlang-mode
-  '(flymake-mode erlang-extended-mode linum-mode hs-minor-mode)
-  181
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  nil
-  "sgm"
-  'dired-mode
-  '(linum-mode)
-  1154
-  '(671 nil)
-  t
-  '("/Users/artemart/JOB/sgm/" "/Users/artemart/JOB/sgm/src/")
-  nil)
-
-(desktop-create-buffer 206
-  "/Users/artemart/Dropbox/.org/work.org"
-  "work.org"
+  "/Users/artemart/Dropbox/.org/task.org"
+  "task.org"
   'org-mode
-  '(linum-mode org-indent-mode)
-  497
-  '(nil nil)
+  '(auto-fill-mode linum-mode yas/minor-mode)
+  124
+  '(116 nil)
   nil
   nil
   '((buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
 
 (desktop-create-buffer 206
-  "/Users/artemart/.emacs.d/configs/init-color-theme.el"
-  "init-color-theme.el"
-  'emacs-lisp-mode
-  '(linum-mode)
-  22
-  '(73 nil)
+  "/Users/artemart/CODING/C/easydb/easy.c"
+  "easy.c"
+  'c-mode
+  '(auto-fill-mode abbrev-mode flymake-mode linum-mode yas/minor-mode eldoc-mode hi-lock-mode)
+  2677
+  '(2673 nil)
   nil
   nil
-  '((buffer-file-coding-system . utf-8-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/.emacs.d/configs/init-windows.el"
-  "init-windows.el"
-  'emacs-lisp-mode
-  '(linum-mode)
-  406
-  '(407 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  nil
-  ".dropbox"
-  'dired-mode
-  '(linum-mode)
-  254
-  '(nil nil)
-  t
-  '("/Users/artemart/.dropbox/")
-  nil)
-
-(desktop-create-buffer 206
-  nil
-  ".org"
-  'dired-mode
-  '(linum-mode)
-  521
-  '(400 nil)
-  t
-  '("/Users/artemart/Dropbox/.org/")
-  nil)
-
-(desktop-create-buffer 206
-  "/Users/artemart/CODING/iOS/BookEj/page1.lua"
-  "page1.lua"
-  'lua-mode
-  '(abbrev-mode linum-mode)
-  3224
-  '(3195 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/Dropbox/.org/tst.org"
-  "tst.org"
-  'org-mode
-  '(linum-mode org-indent-mode)
-  277
-  '(277 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
-
-(desktop-create-buffer 206
-  nil
-  ".visualparadigm"
-  'dired-mode
-  '(linum-mode)
-  193
-  '(nil nil)
-  t
-  '("/Users/artemart/.visualparadigm/")
-  nil)
-
-(desktop-create-buffer 206
-  nil
-  ".matplotlib"
-  'dired-mode
-  '(linum-mode)
-  248
-  '(249 t)
-  t
-  '("/Users/artemart/.matplotlib/")
-  nil)
-
-(desktop-create-buffer 206
-  "/Users/artemart/.emacs.d/configs/init-org.el"
-  "init-org.el"
-  'emacs-lisp-mode
-  '(linum-mode)
-  351
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/JOB/sgm/src/disp.erl"
-  "disp.erl"
-  'erlang-mode
-  '(flymake-mode erlang-extended-mode linum-mode hs-minor-mode)
-  1734
-  '(221 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/CODING/Erlang/erlangine/src/enge2_web.erl"
-  "enge2_web.erl"
-  'erlang-mode
-  '(flymake-mode erlang-extended-mode linum-mode hs-minor-mode)
-  70
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/CODING/Erlang/erlangine/src/enge.erl"
-  "enge.erl"
-  'erlang-mode
-  '(flymake-mode erlang-extended-mode linum-mode hs-minor-mode)
-  3056
-  '(1651 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/JOB/sgm/resource/desc.objs/items.json"
-  "items.json"
-  'fundamental-mode
-  '(linum-mode)
-  85
-  '(89 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/JOB/sgm/resource/desc.lvls/lvls.json"
-  "lvls.json"
-  'fundamental-mode
-  '(linum-mode)
-  120
-  '(112 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/artemart/JOB/sgm/resource/desc.objs/quests.json"
-  "quests.json"
-  'fundamental-mode
-  '(linum-mode)
-  2
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
+  '((tab-width . 4) (indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
 

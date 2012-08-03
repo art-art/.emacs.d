@@ -1,0 +1,26 @@
+;; Object jiffy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jiffy/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("all" function (:arguments ("build")) nil [17 28])
+            ("clean" function nil nil [29 99])
+            ("depends" function nil nil [101 201])
+            ("build" function (:arguments ("depends")) nil [203 236])
+            ("etap" function (:arguments ("test/etap.beam" "test/util.beam")) nil [238 290])
+            ("eunit" function nil nil [292 330])
+            ("check" function (:arguments ("build" "etap" "eunit")) nil [332 356])
+            ("%.beam" function (:arguments ("%.erl")) nil [358 390]))          
+    :file "Makefile"
+    :pointmax 391
+    :fsize 390
+    :lastmodtime '(20437 60991)
+    :unmatched-syntax '((symbol 8 . 15) (punctuation 7 . 8) (punctuation 6 . 7) (symbol 1 . 6) (bol 1 . 1))
+    )
+   )
+  :file "!Users!artemart!CODING!Erlang!comrade!deps!jiffy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

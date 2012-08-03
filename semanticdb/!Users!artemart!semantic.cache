@@ -1,0 +1,55 @@
+;; Object artemart/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "artemart/"
+  :tables (list 
+   (semanticdb-table ".emacs"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [57 98])
+            ("setq" code nil nil [99 190])
+            ("setq" code nil nil [191 254])
+            ("load-cfg-files" function (:arguments ("filelist")) nil [256 437])
+            ("setq" code nil nil [439 504])
+            ("setq" code nil nil [505 701])
+            ("setenv" code nil nil [702 741])
+            ("blink-cursor-mode" code nil nil [743 764])
+            ("load-cfg-files" code nil nil [765 984])
+            ("cl" include nil nil [986 999])
+            ("package" include nil nil [1000 1018])
+            ("add-to-list" code nil nil [1019 1120])
+            ("add-to-list" code nil nil [1122 1174])
+            ("el-get" include nil nil [1175 1192])
+            ("setq" code nil nil [1193 1223])
+            ("setq" code nil nil [1224 1289])
+            ("setq" code nil nil [1291 1896])
+            ("blink-cursor-mode" code nil nil [2039 2060])
+            ("customize-set-variable" code nil nil [2061 2106])
+            ("setq" code nil nil [2108 2333])
+            ("el-get" code nil nil [2334 2364])
+            ("load" code nil nil [2369 2406])
+            ("load" code nil nil [2407 2445])
+            ("load" code nil nil [2446 2484])
+            ("load" code nil nil [2485 2524])
+            ("load" code nil nil [2525 2562])
+            ("load" code nil nil [2563 2598])
+            ("load" code nil nil [2599 2638])
+            ("load" code nil nil [2639 2681])
+            ("load" code nil nil [2686 2730])
+            ("load" code nil nil [2731 2771])
+            ("load" code nil nil [2772 2816])
+            ("load" code nil nil [2821 2859])
+            ("load" code nil nil [2860 2897])
+            ("load" code nil nil [2898 2933])
+            ("load" code nil nil [2934 2971])
+            ("load" code nil nil [2972 3013]))          
+    :file ".emacs"
+    :pointmax 3105
+    :fsize 3104
+    :lastmodtime '(20505 28796)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

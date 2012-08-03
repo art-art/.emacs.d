@@ -1,0 +1,41 @@
+;; Object asn1c-0.9.21/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asn1c-0.9.21/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("libasn1parser" "libasn1fix" "libasn1print" "libasn1compiler" "skeletons" "samples" "tests" "doc" "asn1c")) nil [2 117])
+            ("docsdir" variable (:default-value ("$(datadir)/doc/asn1c")) nil [118 149])
+            ("docs_DATA" variable (:default-value ("README" "FAQ" "COPYING" "ChangeLog" "BUGS" "TODO")) nil [150 201])
+            ("EXTRA_DIST" variable (:default-value ("asn1c.spec.in" "FAQ" "BUGS" "MANIFEST")) nil [202 247])
+            ("CLEANFILES" variable (:default-value ("asn1c.spec")) nil [247 271]))          
+    :file "Makefile.am"
+    :pointmax 271
+    :fsize 270
+    :lastmodtime '(16717 57538)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "config.h.in"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "config.h.in"
+    :pointmax 2350
+    :fsize 2349
+    :lastmodtime '(16927 13355)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile.in"
+    :major-mode 'makefile-bsdmake-mode
+    :tags nil
+    :file "Makefile.in"
+    :pointmax 20947
+    :fsize 20946
+    :lastmodtime '(17666 18418)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!CODING!C!asn1c-0.9.21!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

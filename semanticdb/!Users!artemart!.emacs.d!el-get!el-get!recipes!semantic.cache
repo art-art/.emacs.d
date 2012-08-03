@@ -1,0 +1,48 @@
+;; Object recipes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "recipes/"
+  :tables (list 
+   (semanticdb-table "cisco-router-mode.rcp"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file "cisco-router-mode.rcp"
+    :pointmax 163
+    :fsize 162
+    :lastmodtime '(20481 39442)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-jabber.rcp"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( (":name" code nil nil [1 335]))          
+    :file "emacs-jabber.rcp"
+    :pointmax 336
+    :fsize 335
+    :lastmodtime '(20481 39442)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Enhanced-Ruby-Mode.rcp"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( (":name" code nil nil [1 215]))          
+    :file "Enhanced-Ruby-Mode.rcp"
+    :pointmax 216
+    :fsize 215
+    :lastmodtime '(20481 39442)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ac-math.rcp"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( (":name" code nil nil [1 273]))          
+    :file "ac-math.rcp"
+    :pointmax 274
+    :fsize 273
+    :lastmodtime '(20481 39442)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!.emacs.d!el-get!el-get!recipes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

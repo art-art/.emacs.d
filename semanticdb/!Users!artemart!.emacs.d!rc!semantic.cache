@@ -1,0 +1,351 @@
+;; Object rc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rc/"
+  :tables (list 
+   (semanticdb-table "emacs-desktop.el"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file "emacs-desktop.el"
+    :pointmax 1508
+    :fsize 1507
+    :lastmodtime '(20471 5131)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-autocomplete.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("auto-complete" include nil nil [2 26])
+            ("setq" code nil nil [27 51])
+            ("define-key" code nil nil [77 130])
+            ("add-to-list" code nil nil [131 210])
+            ("artart/ac-hook" function nil nil [212 292])
+            ("add-hook" code nil nil [294 336])
+            ("add-hook" code nil nil [337 380]))          
+    :file "emacs-autocomplete.el"
+    :pointmax 381
+    :fsize 380
+    :lastmodtime '(20502 52307)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-flymake-erlang.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("flymake-erlang-init" function nil nil [3 353])
+            ("add-to-list" code nil nil [355 452])
+            ("artart/flymake-erlang-mode-hook" function nil nil [454 515])
+            ("artart/folding-erlang-mode-hook" function nil nil [517 866])
+            ("add-hook" code nil nil [868 936])
+            ("add-hook" code nil nil [937 998]))          
+    :file "emacs-flymake-erlang.el"
+    :pointmax 999
+    :fsize 998
+    :lastmodtime '(20453 23378)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-cedet.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("add-to-list" code nil nil [58 116])
+            ("add-to-list" code nil nil [117 187])
+            ("add-to-list" code nil nil [267 342])
+            ("add-to-list" code nil nil [343 413])
+            ("add-to-list" code nil nil [414 491])
+            ("add-to-list" code nil nil [567 635])
+            ("add-to-list" code nil nil [636 713])
+            ("semantic-mode" code nil nil [987 1004])
+            ("semantic/bovine/c" include nil nil [1006 1034])
+            ("semantic/bovine/gcc" include nil nil [1035 1065])
+            ("semantic/bovine/clang" include nil nil [1066 1098])
+            ("semantic/ia" include nil nil [1099 1121])
+            ("semantic/decorate/include" include nil nil [1122 1158])
+            ("semantic/lex-spp" include nil nil [1159 1186])
+            ("eassist" include nil nil [1187 1205])
+            ("artart/cedet-hook" function nil nil [1233 1847])
+            ("add-hook" code nil nil [1849 1899])
+            ("add-hook" code nil nil [1908 1957])
+            ("add-hook" code nil nil [1958 2009])
+            ("add-hook" code nil nil [2010 2057])
+            ("artart/c-mode-cedet-hook" function nil nil [2059 2490])
+            ("add-hook" code nil nil [2491 2547])
+            ("semanticdb-enable-gnu-global-databases" code nil nil [2549 2599])
+            ("semanticdb-enable-gnu-global-databases" code nil nil [2600 2652])
+            ("when" code nil nil [2654 2738])
+            ("global-srecode-minor-mode" code nil nil [2751 2780])
+            ("global-ede-mode" code nil nil [2789 2808])
+            ("ede-enable-generic-projects" code nil nil [2809 2838])
+            ("recur-list-files" function (:arguments ("dir" "re")) nil [2840 3516])
+            ("c++-setup-boost" function (:arguments ("boost-root")) nil [3518 3780])
+            ("artart/ede-get-local-var" function (:arguments ("fname" "var")) nil [3806 4162])
+            ("compile" include nil nil [4189 4207])
+            ("setq" code nil nil [4208 4244])
+            ("setq" code nil nil [4245 4279])
+            ("setq" code nil nil [4280 4322])
+            ("artart/compile" function (:user-visible-flag t) nil [4324 4736])
+            ("global-set-key" code nil nil [4738 4775])
+            ("artart/gen-std-compile-string" function nil nil [4780 5163])
+            ("artart/gen-cmake-debug-compile-string" function nil nil [5168 5704])
+            ("artart/gen-cmake-debug/release-compile-string" function nil nil [5706 6300]))          
+    :file "emacs-cedet.el"
+    :pointmax 6301
+    :fsize 6300
+    :lastmodtime '(20506 56156)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-haskell.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("add-to-list" code nil nil [1 58])
+            ("load" code nil nil [59 119])
+            ("haskell-checkers" include nil nil [121 148])
+            ("add-to-list" code nil nil [150 208])
+            ("ghc-init" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [210 242])
+            ("custom-set-variables" code nil nil [244 377])
+            ("artart/haskell-mode-hook" function nil nil [379 875])
+            ("add-hook" code nil nil [876 931])
+            ("haskell-interactive-mode" include nil nil [933 968])
+            ("artart/hs-interactive-hook" function nil nil [969 1198])
+            ("add-hook" code nil nil [1199 1268])
+            ("add-to-list" code nil nil [1273 1321]))          
+    :file "emacs-haskell.el"
+    :pointmax 1322
+    :fsize 1321
+    :lastmodtime '(20465 62327)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-ccmode.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("cc-mode" include nil nil [1 19])
+            ("add-to-list" code nil nil [21 75])
+            ("load" code nil nil [76 92])
+            ("setq" code nil nil [93 146])
+            ("artart/c-mode-common-hook" function nil nil [176 613])
+            ("add-hook" code nil nil [615 672])
+            ("add-hook" code nil nil [673 723])
+            ("info-look" include nil nil [725 745])
+            ("info-lookup-add-help" code nil nil [746 876])
+            ("fp-c-mode-routine" function nil nil [878 946])
+            ("add-hook" code nil nil [947 989])
+            ("setq-default" code nil nil [991 1068])
+            ("add-to-list" code nil nil [1070 1124])
+            ("add-to-list" code nil nil [1125 1177]))          
+    :file "emacs-ccmode.el"
+    :pointmax 1178
+    :fsize 1177
+    :lastmodtime '(20483 3192)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-jabber.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("jabber-bookmarks" include nil nil [2 29])
+            ("artart/jabber-connect-hook" function (:arguments ("jc")) nil [31 925])
+            ("add-hook" code nil nil [926 991])
+            ("artart/jabber-chat-hook" function nil nil [993 1049])
+            ("add-hook" code nil nil [1050 1108])
+            ("jabber-chatbuffer" include nil nil [1110 1138])
+            ("eval-after-load" code nil nil [1139 1374])
+            ("setq" code nil nil [1376 1407])
+            ("setq" code nil nil [1408 1444])
+            ("setq" code nil nil [1445 1483])
+            ("jabber-autoaway" include nil nil [1485 1511])
+            ("add-hook" code nil nil [1512 1571])
+            ("setq" code nil nil [1573 1638])
+            ("setq" code nil nil [1639 1724])
+            ("setq" code nil nil [1725 1799])
+            ("setq" code nil nil [1800 1831])
+            ("setq" code nil nil [1832 2022])
+            ("setq" code nil nil [2024 2065])
+            ("custom-set-variables" code nil nil [2163 2501])
+            ("custom-set-faces" code nil nil [2503 2598])
+            ("setq" code nil nil [2600 2620]))          
+    :file "emacs-jabber.el"
+    :pointmax 2621
+    :fsize 2620
+    :lastmodtime '(20482 48160)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-cmake.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("cmake-mode" function (:prototype-flag t) nil [2 39])
+            ("add-to-list" code nil nil [40 108])
+            ("add-to-list" code nil nil [109 169]))          
+    :file "emacs-cmake.el"
+    :pointmax 170
+    :fsize 169
+    :lastmodtime '(20471 7151)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-server.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("unless" code nil nil [1 128])
+            ("setq" code nil nil [130 162])
+            ("artart/client-start-hook" function nil nil [163 590])
+            ("artart/client-done-hook" function nil nil [592 727])
+            ("custom-set-variables" code nil nil [729 851]))          
+    :file "emacs-server.el"
+    :pointmax 852
+    :fsize 851
+    :lastmodtime '(20453 51919)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-flymake.el"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file "emacs-flymake.el"
+    :pointmax 2269
+    :fsize 2268
+    :lastmodtime '(20453 26408)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-erc.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("erc" include nil nil [1 15])
+            ("erc-join" include nil nil [17 36])
+            ("erc-autojoin-mode" code nil nil [37 58])
+            ("setq" code nil nil [59 332])
+            ("erc-lang" include nil nil [334 353])
+            ("erc-fill" include nil nil [355 374])
+            ("erc-fill-mode" code nil nil [375 392])
+            ("setq" code nil nil [394 435])
+            ("setq" code nil nil [436 481])
+            ("erc-log" include nil nil [483 501])
+            ("setq" code nil nil [502 539])
+            ("setq" code nil nil [540 565])
+            ("setq" code nil nil [566 613])
+            ("setq" code nil nil [614 646])
+            ("setq" code nil nil [647 677])
+            ("setq" code nil nil [679 711])
+            ("erc-autoaway" include nil nil [713 736])
+            ("setq" code nil nil [737 774])
+            ("setq" code nil nil [775 841])
+            ("setq" code nil nil [842 872])
+            ("setq" code nil nil [874 903])
+            ("setq" code nil nil [905 966])
+            ("erc-services" include nil nil [968 991])
+            ("erc-nickserv-mode" code nil nil [992 1013])
+            ("setq" code nil nil [1014 1057])
+            ("erc-menu" include nil nil [1059 1078])
+            ("erc-connect" function (:user-visible-flag t) nil [1080 1224])
+            ("custom-set-variables" code nil nil [1226 1597]))          
+    :file "emacs-erc.el"
+    :pointmax 1598
+    :fsize 1597
+    :lastmodtime '(20469 54627)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-org-mode.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("custom-set-variables" code nil nil [1 1091])
+            ("org-install" include nil nil [1093 1115])
+            ("org" include nil nil [1116 1130])
+            ("add-to-list" code nil nil [1132 1214])
+            ("add-to-list" code nil nil [1215 1307])
+            ("define-key" code nil nil [1309 1356])
+            ("define-key" code nil nil [1357 1400])
+            ("define-key" code nil nil [1401 1446])
+            (#("artart/org-mode-hook" 0 6 (fontified t face font-lock-function-name-face) 6 20 (fontified t face font-lock-function-name-face)) function nil nil [1448 1738])
+            ("add-hook" code nil nil [1739 1786])
+            ("add-hook" code nil nil [1787 1831])
+            ("diary-lib" include nil nil [1881 1901])
+            ("add-hook" code nil nil [1902 1953])
+            ("add-to-list" code nil nil [1971 2065])
+            ("add-to-list" code nil nil [2066 2150])
+            ("add-to-list" code nil nil [2151 2270])
+            ("add-to-list" code nil nil [2271 2375])
+            ("org-remember-insinuate" code nil nil [2394 2418])
+            ("setq" code nil nil [2419 2484])
+            ("define-key" code nil nil [2485 2530])
+            ("setq" code nil nil [2554 2623])
+            ("setq" code nil nil [2624 2668])
+            ("setq" code nil nil [2670 2805])
+            ("icalendar-import-buffer" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [2820 2913])
+            ("org-babel-do-load-languages" code nil nil [3861 4002])
+            ("org-drill" include nil nil [4045 4065]))          
+    :file "emacs-org-mode.el"
+    :pointmax 4067
+    :fsize 4066
+    :lastmodtime '(20483 2976)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-javascript.el"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file "emacs-javascript.el"
+    :pointmax 332
+    :fsize 331
+    :lastmodtime '(20481 39066)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-common-hooks.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("artart/common-hook" function nil nil [2 186])
+            ("add-hook" code nil nil [188 234])
+            ("artart/show-prog-keywords" function nil nil [268 634])
+            ("artart/common-prog-hook" function nil nil [636 722])
+            ("add-hook" code nil nil [723 774])
+            ("setq" code nil nil [820 909])
+            ("artart/trailing-whitespace-hook" function nil nil [911 1048])
+            ("add-hook" code nil nil [1049 1110]))          
+    :file "emacs-common-hooks.el"
+    :pointmax 1415
+    :fsize 1414
+    :lastmodtime '(20483 2937)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-decor.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("tree-widget" include nil nil [2 24])
+            ("load-library" code nil nil [26 47])
+            ("setq" code nil nil [48 194])
+            ("display-time" code nil nil [195 209])
+            ("blink-cursor-mode" code nil nil [210 231])
+            ("mwheel" include nil nil [236 253])
+            ("mwheel-install" code nil nil [254 270])
+            ("fset" code nil nil [301 330])
+            ("custom-set-variables" code nil nil [365 695]))          
+    :file "emacs-decor.el"
+    :pointmax 696
+    :fsize 695
+    :lastmodtime '(20501 34746)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-yasnippet.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("yas/initialize" code nil nil [1 17])
+            ("eval-after-load" code nil nil [18 144])
+            ("artart/update-yasnippets-on-save" function nil nil [146 299])
+            ("add-hook" code nil nil [300 361]))          
+    :file "emacs-yasnippet.el"
+    :pointmax 362
+    :fsize 361
+    :lastmodtime '(20501 37460)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emacs-gdb.el"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file "emacs-gdb.el"
+    :pointmax 109
+    :fsize 108
+    :lastmodtime '(20453 27398)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!artemart!.emacs.d!rc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

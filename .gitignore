@@ -1,5 +1,9 @@
 *~
+*.elc
+*.cache
+*.desktop
 .git
+
 desktop/
 el-get/
 backups/

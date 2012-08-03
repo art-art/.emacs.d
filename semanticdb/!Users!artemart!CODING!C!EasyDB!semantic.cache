@@ -434,20 +434,24 @@
             ("dirent.h" include (:system-flag t) nil [168 187])
             ("string.h" include (:system-flag t) nil [188 207])
             ("easy.h" include nil nil [209 226])
+            ("b" variable
+               (:dereference 2
+                :type "char")
+                nil [228 245])
             ("main" function
                (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [244 253])
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [256 265])
                     ("argv" variable
                        (:pointer 1
                         :dereference 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [254 267]))                  
+                        (reparse-symbol arg-sub-list) [266 279]))                  
                 :type "int")
-                nil [235 1029]))          
+                nil [247 1483]))          
     :file "main.c"
-    :pointmax 1034
-    :fsize 1033
-    :lastmodtime '(20507 61793)
+    :pointmax 1488
+    :fsize 1487
+    :lastmodtime '(20507 63976)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "pconfig.c"
@@ -534,45 +538,44 @@
             ("top_t" variable (:type "int") nil [813 828])
             ("top_d" variable (:type "int") nil [829 844])
             ("STACK_DOMAINS" variable
-               (:pointer 1
-                :dereference 1
+               (:dereference 2
                 :type "char")
-                nil [845 877])
+                nil [845 884])
             ("STACK_TOKENS" variable
                (:dereference 1
                 :type ("token" type
                      (:prototype t
                       :type "struct")
                       nil nil))
-                nil [878 915])
-            ("POP_T" variable (:constant-flag t) nil [925 930])
-            ("PUSH_T" variable (:constant-flag t) nil [961 967])
-            ("PUSH_T" variable (:constant-flag t) nil [961 967])
-            ("POP_D" variable (:constant-flag t) nil [1003 1008])
-            ("POP_D" variable (:constant-flag t) nil [1003 1008])
-            ("PUSH_D" variable (:constant-flag t) nil [1040 1046])
-            ("PUSH_D" variable (:constant-flag t) nil [1040 1046])
+                nil [885 922])
+            ("POP_T" variable (:constant-flag t) nil [932 937])
+            ("PUSH_T" variable (:constant-flag t) nil [968 974])
+            ("PUSH_T" variable (:constant-flag t) nil [968 974])
+            ("POP_D" variable (:constant-flag t) nil [1010 1015])
+            ("POP_D" variable (:constant-flag t) nil [1010 1015])
+            ("PUSH_D" variable (:constant-flag t) nil [1047 1053])
+            ("PUSH_D" variable (:constant-flag t) nil [1047 1053])
             ("_init" function
                (:prototype-flag t
                 :typemodifiers ("static")
                 :arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1094 1099]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1101 1106]))                  
                 :type "void")
-                nil [1076 1100])
+                nil [1083 1107])
             ("_classify" function
                (:prototype-flag t
                 :typemodifiers ("static")
                 :arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1123 1128]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1130 1135]))                  
                 :type "void")
-                nil [1101 1129])
+                nil [1108 1136])
             ("_gettoken" function
                (:prototype-flag t
                 :typemodifiers ("static")
                 :arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1152 1157]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1159 1164]))                  
                 :type "void")
-                nil [1130 1158])
+                nil [1137 1165])
             ("_rconf" function
                (:prototype-flag t
                 :typemodifiers ("static")
@@ -581,9 +584,9 @@
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [1178 1196]))                  
+                        (reparse-symbol arg-sub-list) [1185 1203]))                  
                 :type "void")
-                nil [1159 1197])
+                nil [1166 1204])
             ("_fconf" function
                (:prototype-flag t
                 :typemodifiers ("static")
@@ -591,19 +594,19 @@
                   ( ("fname" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [1234 1246]))                  
+                        (reparse-symbol arg-sub-list) [1241 1253]))                  
                 :type "int")
-                nil [1216 1247])
+                nil [1223 1254])
             ("main" function
                (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1276 1285])
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1283 1292])
                     ("argv" variable
                        (:pointer 1
                         :dereference 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [1286 1299]))                  
+                        (reparse-symbol arg-sub-list) [1293 1306]))                  
                 :type "int")
-                nil [1267 1572])
+                nil [1274 1579])
             ("_rconf" function
                (:typemodifiers ("static")
                 :arguments 
@@ -611,22 +614,22 @@
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [1767 1785]))                  
+                        (reparse-symbol arg-sub-list) [1774 1792]))                  
                 :type "void")
-                nil [1747 2269])
+                nil [1754 2284])
             ("_fconf" function
                (:typemodifiers ("static")
                 :arguments 
                   ( ("cfname" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [2294 2307]))                  
+                        (reparse-symbol arg-sub-list) [2309 2322]))                  
                 :type "int")
-                nil [2274 3231]))          
+                nil [2289 3246]))          
     :file "pconfig.c"
-    :pointmax 3236
-    :fsize 3235
-    :lastmodtime '(20507 61760)
+    :pointmax 3251
+    :fsize 3250
+    :lastmodtime '(20507 64032)
     :unmatched-syntax 'nil
     :lexical-table 
         '(("O_GREQ" . ((string "\">=\"" 419 . 423)))
